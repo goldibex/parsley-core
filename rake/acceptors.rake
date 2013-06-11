@@ -19,7 +19,7 @@ namespace :acceptor do
     ACCEPTOR_EACH_OBJ.each do |obj|
       puts obj
       if first_line then first_line = false else out.puts " |\\\n" end
-      out.puts("<#{obj}>")
+      out.puts("\"<#{obj}>\"")
     end
     out.close
   end
