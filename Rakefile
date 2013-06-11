@@ -14,6 +14,9 @@ Rake.application.tasks.each do |t|
   end
 end
 
-multitask :default => defaults do
+desc "Build the final morphology analysis FST."
+multitask :morph => defaults do
   sh "fst-compiler src/morphology.fst out/morphology.a"  
 end
+
+task :default => :morph

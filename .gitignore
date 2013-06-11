@@ -1,0 +1,4 @@
+*.a
+*.lex
+src/endings/*.fst
+out
