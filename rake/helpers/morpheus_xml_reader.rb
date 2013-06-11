@@ -78,7 +78,23 @@ class MorpheusXMLReader < Nokogiri::XML::SAX::Document
         if a == b then a else "#{a}:#{b}" end 
       end
       
-#      ww = if @whole_word then "<whole_word>" else "" end
+      out_final = ""
+      split_stem = @stem.gsub(/\s+/, "").split(//)
+      split_lemma = @lemma.gsub(/\s+/, "").split(//)
+      max = split_stem.length > split_lemma.length ? split_stem.length : split_lemma.length
+      max.times do |i|
+        if ((i < split_lemma.length) && (i < split_stem.length))
+          out_final << if split_lemma[i] == split_stem[i] then split_lemma[i] else "#{split_lemma[i]}:#{split_stem[i]}" end
+        elsif (i < split_stem.length)
+          out_final << "<>:#{split_stem[i]}"
+        elsif (i < split_lemma.length)
+          out_final << "#{split_lemma[i]}:<>"
+        end        
+      end
+      if stem_text.join != out_final
+#        raise "MISMATCH: #{stem_text.join} vs. #{out_final}"
+      end
+      #      ww = if @whole_word then "<whole_word>" else "" end
       ww = ""
 
       if @morph_choices.nil?
@@ -86,7 +102,7 @@ class MorpheusXMLReader < Nokogiri::XML::SAX::Document
       else
         @morph_choices.each do |morph_choice|
           morph_data = "<#{morph_choice.join "><"}>"
-          @out.puts "#{stem_text.join}#{morph_data}<#{@itype}>#{ww}"
+          @out.puts "#{out_final}#{morph_data}<#{@itype}>#{ww}"
         end
       end
     when "entry"
