@@ -5,7 +5,7 @@ inflections:
   number: [sg, pl]
   case: [nom, acc, gen, dat, abl, voc]
   tense: [pres, imperf, fut, perf, plup, futperf]
-  mood: [ind, subj, inf, gerundive, supine]
+  mood: [ind, subj, inf, gerundive, supine, imperat, part]
   voice: [act, pass]
   degree: [pos, comp, superl]
 inflection_lookup:
@@ -26,6 +26,7 @@ inflection_lookup:
   ind: mood
   subj: mood
   inf: mood
+  imperat: mood
   gerundive: mood
   supine: mood
   act: voice

@@ -58,7 +58,7 @@ namespace :endings do
   end
 
   task ENDINGS_OBJ => ENDINGS_SRC do
-    sh "fst-compiler #{ENDINGS_DIR}/endings.fst #{ENDINGS_DIR}/endings.a"
+    sh "fst-compiler #{ENDINGS_SRC} #{ENDINGS_OBJ}"
   end
 
   desc "Build all endings sources to FST."

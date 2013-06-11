@@ -5,7 +5,7 @@
 #gender# = <masc><fem><neut>
 #case# = <nom><acc><gen><dat><abl><voc><adverbial>
 #tense# = <pres><imperf><fut><perf><plup><futperf>
-#mood# = <ind><inf><imp><subj><gerundive><supine><part>
+#mood# = <ind><inf><imperat><subj><gerundive><supine><part>
 #voice# = <act><pass>
 #degree# = <pos><comp><superl><irreg_superl>
 #morph# = #person# #number# #gender# #case# #tense# #mood# #voice# #degree#

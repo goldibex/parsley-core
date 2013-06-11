@@ -63,21 +63,7 @@ class MorpheusXMLReader < Nokogiri::XML::SAX::Document
     when "no", "wd", "aj", "vb", "vs", "de"
       # write entry to disk
       # align the lemma and stem
-      # so, mal:malus -> malu:<>s:<>
-      stem_chars = @stem.gsub(/\s+/, "").split(//)
-      lemma_chars = @lemma.gsub(/\s+/, "").split(//)
-      if stem_chars.length > lemma_chars.length 
-        longer_chars, shorter_chars = stem_chars, lemma_chars
-      else
-        longer_chars, shorter_chars = lemma_chars, stem_chars
-      end
-      zipped_chars = longer_chars.zip(shorter_chars)
-      stem_text = zipped_chars.map do |z|
-        a = z[0] || "<>"
-        b = z[1] || "<>"
-        if a == b then a else "#{a}:#{b}" end 
-      end
-      
+      # so, mal:malus -> malu:<>s:<>     
       out_final = ""
       split_stem = @stem.gsub(/\s+/, "").split(//)
       split_lemma = @lemma.gsub(/\s+/, "").split(//)
@@ -91,14 +77,11 @@ class MorpheusXMLReader < Nokogiri::XML::SAX::Document
           out_final << "#{split_lemma[i]}:<>"
         end        
       end
-      if stem_text.join != out_final
-#        raise "MISMATCH: #{stem_text.join} vs. #{out_final}"
-      end
       #      ww = if @whole_word then "<whole_word>" else "" end
       ww = ""
 
       if @morph_choices.nil?
-        @out.puts "#{stem_text.join}<#{@itype}>#{ww}"
+        @out.puts "#{out_final}<#{@itype}>#{ww}"
       else
         @morph_choices.each do |morph_choice|
           morph_data = "<#{morph_choice.join "><"}>"
