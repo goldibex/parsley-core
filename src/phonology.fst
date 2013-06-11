@@ -1,4 +1,4 @@
-#include "symbols.fst"
+#include "src/symbols.fst"
 
 #consonant# = BCDFGHJKLMNPQRSTVWXZbcdfghjklmnpqrstvwxz
 #vowel# = AEIOUYaeiouy
@@ -8,7 +8,7 @@
 #breve# = \^
 #diaeresis# = \+
 #diacritic# = #macron# #breve# #diaeresis#
-#all-alpha# = #consonant# #vowel# #diacritic#
+#character# = #letter# #diacritic#
 
 $vowel$ = [#vowel#][#diacritic#]*
 

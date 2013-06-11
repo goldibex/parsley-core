@@ -78,7 +78,8 @@ class MorpheusXMLReader < Nokogiri::XML::SAX::Document
         if a == b then a else "#{a}:#{b}" end 
       end
       
-      ww = if @whole_word then "<whole_word>" else "" end
+#      ww = if @whole_word then "<whole_word>" else "" end
+      ww = ""
 
       if @morph_choices.nil?
         @out.puts "#{stem_text.join}<#{@itype}>#{ww}"

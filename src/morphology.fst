@@ -1,13 +1,15 @@
-#include "symbols.fst"
-#include "stemtypes.fst"
-#include "phonology.fst"
+#include "src/symbols.fst"
+#include "src/phonology.fst"
 
-#morph-or-other# = #morph# #other#
-$strip-letter$ = <>:[A-Za-z0-9\^\_\+]+ || $letter$+
-$stems$ = "<stems/stems.a>" || $letter$+ [#morph-or-other#]:<>* [#stemtype#]:<>
-$ends$ = "<endings/endings.a>" || $letter$+ [#morph-or-other#]:<>* [#stemtype#]:<>
+#all-but-stemtype# = #character# #morph# #other#
+
+$stems$ = "<out/stems.a>" || $letter$+ [#symbol#]:<>+
+$indecl-stems$ = [#all-but-stemtype#]+ [#indecl#] || $stems$
+$ends$ = "<out/endings.a>" || $letter$+ [#symbol#]:<>+
 $morph$ = $stems$ $ends$
+$morph$ = $morph$ | $indecl-stems$
 
-$acceptor$ = "<acceptor.a>"
+$acceptor$ = "<out/acceptor.a>"
 
-$strip-letter$
+$x$ = $acceptor$ || $morph$
+$indecl-stems$

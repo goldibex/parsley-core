@@ -14,6 +14,8 @@
 #type# = <pers_name><person><place><ethnic><river>
 #other# = #time# #type# <no_comp>
 
+#symbol# = #morph# #other# #stemtype#
+
 $person$ = [#person#]
 $number$ = [#number#]
 $gender$ = [#gender#]
@@ -24,6 +26,7 @@ $voice$ = [#voice#]
 $degree$ = [#degree#]
 $other$ = [#other#]
 $stemtype$ = [#stemtype#]
+$symbol$ = [#symbol#]
 
 $=person$ = [#person#]
 $=number$ = [#number#]

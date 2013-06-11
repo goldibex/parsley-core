@@ -14,11 +14,11 @@
 
 #verb# = <conj1><conj2><conj3><conj4><conj3_io><perfstem><ivperf><avperf><evperf><pp4><irreg_pp1><irreg_pp2><irreg_fut>
 
-#indecl# = <adverb><alphabetic><abbrev><conj><connect><exclam><expletive><indecl><numeral><particle><prep>
+#indecl1a# = <adverb><alphabetic><abbrev><conj><connect><exclam><expletive><indecl><numeral><particle><prep>
 #indecl1# = <article><demonstr><relative><rel_pron><pron_adj1>
 #indecl2# = <irreg_nom2>
 #indecl3# = <interrog><demonstr><pron1><pron2><reflex><indecl_noun><indecl_adj><indef><indef_pron><indef_rel_pron><interrog><irreg_nom3><pron3><pron_adj3>
 
-#indecl-all# = #indecl# #indecl1# #indecl2# #indecl3#
+#indecl# = #indecl1a# #indecl1# #indecl2# #indecl3#
 
-#stemtype# = #noun# #adj# #verb# #indecl-all#
+#stemtype# = #noun# #adj# #verb# #indecl#
