@@ -1,0 +1,35 @@
+---
+inflections:
+  person: [1st, 2nd, 3rd]
+  gender: [masc, fem, neut]
+  number: [sg, pl]
+  case: [nom, acc, gen, dat, abl, voc]
+  tense: [pres, imperf, fut, perf, plup, futperf]
+  mood: [ind, subj, inf, gerundive, supine]
+  voice: [act, pass]
+  degree: [pos, comp, superl]
+inflection_lookup:
+  1st: person
+  2nd: person
+  3rd: person
+  masc: gender
+  fem: gender
+  neut: gender
+  sg: number
+  pl: number
+  pres: tense
+  fut: tense
+  imperf: tense
+  perf: tense
+  plup: tense
+  futperf: tense
+  ind: mood
+  subj: mood
+  inf: mood
+  gerundive: mood
+  supine: mood
+  act: voice
+  pass: voice
+  pos: degree
+  comp: degree
+  superl: degree
