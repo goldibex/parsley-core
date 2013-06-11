@@ -18,15 +18,14 @@ namespace :acceptor do
     first_line = true
     ACCEPTOR_EACH_OBJ.each do |obj|
       puts obj
-      if first_line then first_line = false else out.puts " |\\\n" end
-      out.puts("\"<#{obj}>\"")
+      if first_line then first_line = false else out.print " |\\\n" end
+      out.print("\"<#{obj}>\"")
     end
     out.close
   end
 
 
   task ACCEPTOR_OBJ => ACCEPTOR_SRC do
-    puts "Building acceptor..."
     sh "fst-compiler #{ACCEPTOR_SRC} #{ACCEPTOR_OBJ}"
   end
 
