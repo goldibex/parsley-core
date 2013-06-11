@@ -19,4 +19,5 @@ multitask :morph => defaults do
   sh "fst-compiler src/morphology.fst out/morphology.a"  
 end
 
+directory "out"
 task :default => :morph
