@@ -44,7 +44,7 @@ namespace :endings do
     out.close
   end
 
-  multitask ENDINGS_SRC => ENDINGS_EACH_OBJ do
+  file ENDINGS_SRC => ENDINGS_EACH_OBJ do
     out = File.open(ENDINGS_SRC, "w")
     out.print "("
     first_line = true
@@ -57,7 +57,7 @@ namespace :endings do
     out.close
   end
 
-  task ENDINGS_OBJ => ENDINGS_SRC do
+  file ENDINGS_OBJ => ENDINGS_SRC do
     sh "fst-compiler #{ENDINGS_SRC} #{ENDINGS_OBJ}"
   end
 

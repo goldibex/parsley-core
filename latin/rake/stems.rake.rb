@@ -16,26 +16,26 @@ namespace :stems do
   CLOBBER.include(STEMS_SRC)
   CLOBBER.include(STEMS_OBJ)
  
-  task :stems => :stems_lex do
+  file STEMS_OBJ => STEMS_SRC do
     sh "fst-compiler #{STEMS_SRC} #{STEMS_OBJ}"
   end
   
-  multitask :stems_lex => [NOUN_STEM_LEX, VERB_STEM_LEX] do
+  file STEMS_SRC => [NOUN_STEM_LEX, VERB_STEM_LEX] do
     out = File.open(STEMS_SRC, "w")
     out.puts "\"#{NOUN_STEM_LEX}\" | \"#{VERB_STEM_LEX}\""
     out.close
   end
 
-  task NOUN_STEM_LEX do
+  file NOUN_STEM_LEX do
     parser = Nokogiri::XML::SAX::Parser.new(MorpheusXMLReader.new NOUN_STEM_LEX)
     parser.parse(File.open(NOUN_STEM_XML))
   end
 
-  task VERB_STEM_LEX do
+  file VERB_STEM_LEX do
     parser = Nokogiri::XML::SAX::Parser.new(MorpheusXMLReader.new VERB_STEM_LEX)
     parser.parse(File.open(VERB_STEM_XML))
   end
 
   desc "Create the stem vocabulary FST."
-  task :default => :stems
+  task :default => STEMS_OBJ
 end

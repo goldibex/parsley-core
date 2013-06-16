@@ -13,7 +13,7 @@ namespace :acceptor do
     sh "fst-compiler #{t.source} #{t.name}"
   end
 
-  multitask ACCEPTOR_SRC => ACCEPTOR_EACH_OBJ do
+  file ACCEPTOR_SRC => ACCEPTOR_EACH_OBJ do
     out = File.open(ACCEPTOR_SRC, "w")
     first_line = true
     ACCEPTOR_EACH_OBJ.each do |obj|
@@ -25,7 +25,7 @@ namespace :acceptor do
   end
 
 
-  task ACCEPTOR_OBJ => ACCEPTOR_SRC do
+  file ACCEPTOR_OBJ => ACCEPTOR_SRC do
     sh "fst-compiler #{ACCEPTOR_SRC} #{ACCEPTOR_OBJ}"
   end
 

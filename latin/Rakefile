@@ -7,7 +7,8 @@ Dir.glob('rake/*.rake.rb').each { |r|
   require "#{File.dirname(__FILE__)}/#{r}"
 }
 
-defaults = []
+directory OBJ_DIR
+defaults = [OBJ_DIR]
 Rake.application.tasks.each do |t|
   if t.name.match(/:default$/)
     defaults << t
@@ -15,9 +16,17 @@ Rake.application.tasks.each do |t|
 end
 
 desc "Build the final morphology analysis FST."
-multitask :morph => defaults do
-  sh "fst-compiler src/morphology.fst out/morphology.a"  
+task :morph => "out/morphology.a"
+
+file "out/morphology.a" => defaults do
+  sh "fst-compiler src/morphology.fst out/morphology.a"
 end
 
-directory "out"
-task :default => :morph
+desc "Build the final AT&T format FST required for Parsley."
+task :att => "out/morphology.att"
+
+file "out/morphology.att" => "out/morphology.a" do
+  sh "fst-print out/morphology.a > out/morphology.att"
+end
+
+task :default => :att
