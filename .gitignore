@@ -1,4 +1,4 @@
 *.a
 *.lex
-src/endings/*.fst
+**/src/endings/*.fst
 out
