@@ -3,9 +3,16 @@ require 'rake/clean'
 SRC_DIR = "src"
 OBJ_DIR = "out"
 
+MORPH_SRC = "#{SRC_DIR}/morphology.fst"
+MORPH_OBJ = "#{OBJ_DIR}/morphology.a"
+MORPH_ATT = "#{OBJ_DIR}/morphology.att"
+
 Dir.glob('rake/*.rake.rb').each { |r| 
   require "#{File.dirname(__FILE__)}/#{r}"
 }
+
+CLOBBER.include(MORPH_OBJ)
+CLOBBER.include(MORPH_ATT)
 
 directory OBJ_DIR
 defaults = [OBJ_DIR]
@@ -16,17 +23,18 @@ Rake.application.tasks.each do |t|
 end
 
 desc "Build the final morphology analysis FST."
-task :morph => "out/morphology.a"
+task :morph => MORPH_OBJ
 
-file "out/morphology.a" => defaults do
-  sh "fst-compiler src/morphology.fst out/morphology.a"
+file MORPH_OBJ => defaults do
+  sh "fst-compiler #{MORPH_SRC} #{MORPH_OBJ}"
 end
 
-desc "Build the final AT&T format FST required for Parsley."
-task :att => "out/morphology.att"
 
-file "out/morphology.att" => "out/morphology.a" do
-  sh "fst-print out/morphology.a > out/morphology.att"
+desc "Build the final AT&T format FST required for Parsley."
+task :att => MORPH_ATT
+
+file MORPH_ATT => MORPH_OBJ do
+  sh "fst-print #{MORPH_OBJ} > #{MORPH_ATT}"
 end
 
 task :default => :att

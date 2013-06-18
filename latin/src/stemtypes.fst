@@ -22,4 +22,6 @@
 
 #indecl# = #indecl1a# #indecl1# #indecl2# #indecl3# #indecl4#
 
-#stemtype# = #noun# #adj# #verb# #indecl#
+#deriv# = <are_vb><ire_vb>
+
+#stemtype# = #noun# #adj# #verb# #indecl# #deriv#
