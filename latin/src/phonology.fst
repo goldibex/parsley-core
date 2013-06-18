@@ -7,7 +7,8 @@
 #macron# = \_
 #breve# = \^
 #diaeresis# = \+
-#diacritic# = #macron# #breve# #diaeresis#
+#parse-separator# = \:
+#diacritic# = #macron# #breve# #diaeresis# #parse-separator#
 #character# = #letter# #diacritic#
 
 $vowel$ = [#vowel#][#diacritic#]*

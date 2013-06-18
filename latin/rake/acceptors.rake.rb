@@ -24,7 +24,6 @@ namespace :acceptor do
     out.close
   end
 
-
   file ACCEPTOR_OBJ => ACCEPTOR_SRC do
     sh "fst-compiler #{ACCEPTOR_SRC} #{ACCEPTOR_OBJ}"
   end

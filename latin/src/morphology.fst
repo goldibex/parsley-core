@@ -6,7 +6,7 @@
 $stems$ = "<out/stems.a>" || $letter$+ [#symbol#]:<>+
 $indecl-stems$ = [#all-but-stemtype#]+ [#indecl#] || $stems$
 $ends$ = "<out/endings.a>" || $letter$+ [#symbol#]:<>+
-$morph$ = $stems$ $ends$
+$morph$ = $stems$ {\:\:}:<> $ends$
 
 $acceptor$ = "<out/acceptor.a>"
 
