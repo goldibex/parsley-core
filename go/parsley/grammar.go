@@ -15,6 +15,16 @@ var (
   ParseGrammarError error = errors.New("Parse has invalid grammar")
 )
 
+type ParsePart struct {
+  Component string
+  Tokens []string
+}
+
+type Parse struct {
+  Parts []ParsePart
+  Summary string
+}
+
 type Grammar struct {
   Dictionary map[string][]string
   Order []string
@@ -32,27 +42,6 @@ func NewGrammar(dictionary map[string][]string) (*Grammar, error) {
     }
   }
   return &Grammar{Dictionary: dictionary, tokenLookup: tokenLookup}, nil
-}
-
-type Result struct {
-  Query string
-  Analyses []Analysis
-}
-
-type Analysis struct {
-  Word string
-  Lemma string
-  Parses []Parse
-}
-
-type Parse struct {
-  Parts []ParsePart
-  Summary string
-}
-
-type ParsePart struct {
-  Component string
-  Tokens []string
 }
 
 func (g *Grammar) Interpret(fstOut string) (*Parse, error) {
@@ -85,9 +74,9 @@ func (g *Grammar) Interpret(fstOut string) (*Parse, error) {
     p.Parts = append(p.Parts, pp)
   }
 
-
-  summaryBits := make([]string, 0, 8)
   // now generate the summary
+  summaryBits := make([]string, 0, 8)
+
   if g.Order != nil {
     for _, k := range g.Order {
       summaryBits = append(summaryBits, tokenForType[k])
