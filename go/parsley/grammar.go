@@ -24,6 +24,7 @@ type ParsePart struct {
 type Parse struct {
   Parts []ParsePart
   Summary string
+  Form string
 }
 
 type Grammar struct {
@@ -60,7 +61,7 @@ func (g *Grammar) Interpret(fstOut string) (*Parse, error) {
     tokens := strings.Split(fragment, "<")
     for _, token := range tokens {
       if strings.HasSuffix(token, ">") {
-        token = strings.Trim(token, ">")
+        token = strings.Trim(token, " \r\n\t>")
         tokenType, ok := g.tokenLookup[token]; if !ok {
           panic(fmt.Sprintf("Token %s not found in dictionary", token))
         }
@@ -74,6 +75,7 @@ func (g *Grammar) Interpret(fstOut string) (*Parse, error) {
       }
     }
     p.Parts = append(p.Parts, pp)
+    p.Form += pp.Component
   }
 
   // now generate the summary
