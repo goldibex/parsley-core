@@ -20,6 +20,7 @@ var (
 
   testFstOut string = "mal<us_a_um>::us<masc><nom><sg><us_a_um>"
   testFstSummary string = "masc nom sg us_a_um"
+  testFragment string = "mal<us_a_um>"
   testFstBadOut string = "mal<fem><us_a_um>::us<masc><nom><sg><us_a_um>"
 )
 
@@ -42,6 +43,8 @@ func TestInterpret(t *testing.T) {
     t.Errorf("There's %d parse components, should be 2", len(parse.Parts))
   } else if parse.Summary != testFstSummary {
     t.Errorf("Expected parse.Summary to be %s, got %s", testFstSummary, parse.Summary)
+  } else if parse.Parts[0].Fragment != testFragment {
+    t.Errorf("Expected parse.Parts[0].Fragment to be %s, got %s", testFragment, parse.Parts[0].Fragment)
   }
 
   parse, err = g.Interpret(testFstBadOut); if err != ParseGrammarError {

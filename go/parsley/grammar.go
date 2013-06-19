@@ -16,6 +16,7 @@ var (
 )
 
 type ParsePart struct {
+  Fragment string
   Component string
   Tokens []string
 }
@@ -55,6 +56,7 @@ func (g *Grammar) Interpret(fstOut string) (*Parse, error) {
   for _, fragment := range parseFragments {
     var pp ParsePart
     pp.Tokens = make([]string, 8)
+    pp.Fragment = fragment
     tokens := strings.Split(fragment, "<")
     for _, token := range tokens {
       if strings.HasSuffix(token, ">") {
@@ -95,23 +97,26 @@ func (g *Grammar) Interpret(fstOut string) (*Parse, error) {
 {
   "word": "malo",
   "lemma": "malus",
-  "analysis": [
+  "parses": [
     {
       "summary": "dat sg masc",
-      "stem": {
-        "grammar": {
-          "stemtype": "us_a_um"
+      "parts": [
+        {
+          "component": "mal",
+          "grammar": {
+            "stemtype": "us_a_um"
+          }
+        },
+        {
+          "component": "o",
+          "grammar": {
+            "case": "dat",
+            "number": "sg",
+            "gender": "masc",
+            "stemtype": "us_a_um"
+          }
         }
-      },
-      "ending": {
-        "component": "o",
-        "grammar": {
-          "case": "dat",
-          "number": "sg",
-          "gender": "masc",
-          "stemtype": "us_a_um"
-        }
-      },
+      ]
     },
     {
       "summary": "abl sg masc",
