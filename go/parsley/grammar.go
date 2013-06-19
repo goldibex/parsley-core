@@ -11,11 +11,13 @@ const (
 )
 
 var (
-  BadGrammar error = errors.New("Invalid grammar dictionary specified")
+  GrammarError error = errors.New("Invalid grammar dictionary specified")
+  ParseGrammarError error = errors.New("Parse has invalid grammar")
 )
 
 type Grammar struct {
   Dictionary map[string][]string
+  Order []string
   tokenLookup map[string]string
 }
 
@@ -24,7 +26,7 @@ func NewGrammar(dictionary map[string][]string) (*Grammar, error) {
   for key, values := range dictionary {
     for _, value := range values {
       if _, ok := tokenLookup[value]; ok {
-        return nil, BadGrammar
+        return nil, GrammarError
       }
       tokenLookup[value] = key
     }
@@ -45,21 +47,25 @@ type Analysis struct {
 
 type Parse struct {
   Parts []ParsePart
+  Summary string
 }
 
 type ParsePart struct {
   Component string
-  Tokens map[string]string
+  Tokens []string
 }
 
-func (g *Grammar) Interpret(fstOut string) (p *Parse) {
+func (g *Grammar) Interpret(fstOut string) (*Parse, error) {
 
   parseFragments := strings.Split(fstOut, ParseComponentSeparator)
+  p := new(Parse)
   p.Parts = make([]ParsePart, 0, len(parseFragments))
+
+  tokenForType := make(map[string]string, 8)
 
   for _, fragment := range parseFragments {
     var pp ParsePart
-    pp.Tokens = make(map[string]string, 8)
+    pp.Tokens = make([]string, 8)
     tokens := strings.Split(fragment, "<")
     for _, token := range tokens {
       if strings.HasSuffix(token, ">") {
@@ -67,14 +73,33 @@ func (g *Grammar) Interpret(fstOut string) (p *Parse) {
         tokenType, ok := g.tokenLookup[token]; if !ok {
           panic(fmt.Sprintf("Token %s not found in dictionary", token))
         }
-        pp.Tokens[tokenType] = token
+        if oldToken, ok := tokenForType[tokenType]; ok && oldToken != token {
+          return nil, ParseGrammarError 
+        }
+        tokenForType[tokenType] = token
+        pp.Tokens = append(pp.Tokens, token)
       } else {
         pp.Component = token
       }
     }
     p.Parts = append(p.Parts, pp)
   }
-  return
+
+
+  summaryBits := make([]string, 0, 8)
+  // now generate the summary
+  if g.Order != nil {
+    for _, k := range g.Order {
+      summaryBits = append(summaryBits, tokenForType[k])
+    }
+  } else {
+    for _, v := range tokenForType {
+      summaryBits = append(summaryBits, v)
+    }
+  }
+
+  p.Summary = strings.Join(summaryBits, " ")
+  return p, nil
 }
 
 /*
