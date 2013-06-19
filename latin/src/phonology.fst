@@ -20,4 +20,4 @@ $vowel$ = ($vowel-long$ | $vowel-short$ | $vowel$)
 $vowel-sep$ = $vowel$ $vowel$ [#diaeresis#]:[#diaeresis#<>]
 $vowel$ = ($vowel-sep$ | $vowel$)
 
-$letter$ = ([#consonant#] | [#lemma-extra#]  | $vowel$)
+$letter$ = ([#consonant#] | [#lemma-extra#] | [#parse-separator#] | $vowel$)

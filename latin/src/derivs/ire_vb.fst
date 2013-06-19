@@ -3,8 +3,6 @@
 
 ALPHABET = [#character#] [#symbol#]
 
-$pres$ = <conj1>:<ire_vb>
-$perf$ = <ivperf>:<ire_vb>
-$pp4$ = {i\_t<pp4>}:<ire_vb>
-
-.* ($pres$ || $perf$ || $pp4$)? .*
+.* <ire_vb> ( <conj4>:<> |\
+              <ivperf>:<> |\
+              {i\_t<pp4>}:<> )

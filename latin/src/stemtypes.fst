@@ -24,4 +24,4 @@
 
 #deriv# = <are_vb><ire_vb>
 
-#stemtype# = #noun# #adj# #verb# #indecl# #deriv#
+#stemtype# = #noun# #adj# #verb# #indecl#

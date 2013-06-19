@@ -12,7 +12,7 @@
 
 #time# = <early><late>
 #type# = <pers_name><person><place><ethnic><river>
-#other# = #time# #type# <no_comp>
+#other# = #deriv# #time# #type# <no_comp>
 
 #symbol# = #morph# #other# #stemtype#
 
@@ -37,3 +37,5 @@ $=mood$ = [#mood#]
 $=voice$ = [#voice#]
 $=degree$ = [#degree#]
 $=stemtype$ = [#stemtype#]
+
+$separator$ = {\:\:}:<>

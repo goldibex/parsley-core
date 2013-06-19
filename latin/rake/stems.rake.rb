@@ -51,7 +51,6 @@ namespace :stems do
 
   file LEMMA_LEX do
     parser = Nokogiri::XML::SAX::Parser.new(MorpheusLemmaReader.new LEMMA_LEX)
-    puts "parsing"
     parser.parse(File.open(NOUN_STEM_XML))
     parser.parse(File.open(VERB_STEM_XML))
   end 
