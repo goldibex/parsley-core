@@ -62,4 +62,8 @@ func TestParse(t *testing.T) {
   if parse.Form != testForm {
     t.Errorf("Parse had form %s, should be %s", parse.Form, testForm)
   }
+  if len(parse.Parts[0].Tokens) != 1 {
+    t.Errorf("Parse part 0 had %d tokens, should be 1", len(parse.Parts[0].Tokens))
+  }
+  t.Logf("%+v", result)
 }

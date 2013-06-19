@@ -56,7 +56,7 @@ func (g *Grammar) Interpret(fstOut string) (*Parse, error) {
 
   for _, fragment := range parseFragments {
     var pp ParsePart
-    pp.Tokens = make([]string, 8)
+    pp.Tokens = make([]string, 0, 8)
     pp.Fragment = fragment
     tokens := strings.Split(fragment, "<")
     for _, token := range tokens {

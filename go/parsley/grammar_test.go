@@ -43,7 +43,10 @@ func TestInterpret(t *testing.T) {
   } 
   if len(parse.Parts) != 2 {
     t.Errorf("There's %d parse components, should be 2", len(parse.Parts))
-  } 
+  }
+  part := parse.Parts[0]; if len(part.Tokens) != 1 {
+    t.Errorf("First parse part has %d tokens, should be 1", len(part.Tokens))
+  }
   if parse.Summary != testFstSummary {
     t.Errorf("Expected parse.Summary to be %s, got %s", testFstSummary, parse.Summary)
   } 
