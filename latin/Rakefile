@@ -9,4 +9,5 @@ Dir.glob('../rake/*.rake.rb').each do |r|
   require "#{File.dirname(__FILE__)}/#{r}"
 end
 
-task :default => "morph:att"
+task :latin => "morph:att"
+task :default => :latin
