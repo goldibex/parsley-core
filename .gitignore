@@ -2,3 +2,4 @@
 *.lex
 **/src/endings/*.fst
 out
+Gemfile.lock
