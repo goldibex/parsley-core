@@ -19,29 +19,3 @@ dictionary:
   deponency: [dep]
   stemtype: [ 0_a_um, 0_adj3, 0_e, 0_i, 0_is, 0_us, aLs_aris, a_ae, a_es, adverb, an_aLnis, ans_adj, ans_antis, are_vb, as_adis, as_ae, as_anis, as_antis, as_atis, avperf, ax_adj, c_cis, c_kos, conj, conj1, conj2, conj3, conj3_io, conj4, demonstr, eLr_eLis, eLr_eLris, eLs_eris, e_ae, e_es, e_is, en_inis, ens_adj, ens_entis, eps_ipis, eps_ipitis, er_era_erum, er_eris, er_i, er_ra_rum, er_ri, er_ris, er_ris_re, es_ae, es_eLdis, es_eLi, es_eLtis, es_eLtis_adj, es_ei, es_idis, es_is, es_itis, eus_ei, evperf, ex_icis, ex_icis_adj, ex_igis, exclam, indecl, indef, interrog, ior_ius_comp, ios_i, ire_vb, irreg_adj1, irreg_adj2, irreg_adj3, irreg_decl3, irreg_fut, irreg_nom2, irreg_nom3, irreg_pp1, irreg_pp2, is_e, is_eos, is_eris, is_idis, is_idos, is_is, is_is_C, ius_i, ius_ia_ium, ivperf, ix_adj, ix_iLcis, ix_icis, ix_igis, ma_matis, men_minis, numeral, oLn_oLnis, oLn_onis, o_eLnis, o_enis, o_inis, o_oLnis, o_onis, o_ontis, o_us, on_i, on_ontis, or_oLris, or_oris, or_us_comp, os_i, os_ois, ox_adj, peLs_pedis, peLs_pedis_adj, perfstem, pp4, prep, pron, pron1, pron2, pron3, rel_pron, relative, s_dis, s_dis_adj, s_e, s_is, s_nis, s_ris, s_tis, s_tis_adj, tas_tatis, uLs_uLris, uns_untis, ur_oris, us_a_um, us_eris, us_i, us_ius_adj, us_oris, us_untis, us_us, x_cis, x_ctis, x_gis, y_pos, ys_yos]
 order: [person, gender, number, case, tense, mood, voice, degree, compounding, contraction, syncope, nountype, usage, time, accentuation, reduplication, deponency, stemtype]
-inflection_lookup:
-  1st: person
-  2nd: person
-  3rd: person
-  masc: gender
-  fem: gender
-  neut: gender
-  sg: number
-  pl: number
-  pres: tense
-  fut: tense
-  imperf: tense
-  perf: tense
-  plup: tense
-  futperf: tense
-  ind: mood
-  subj: mood
-  inf: mood
-  imperat: mood
-  gerundive: mood
-  supine: mood
-  act: voice
-  pass: voice
-  pos: degree
-  comp: degree
-  superl: degree
