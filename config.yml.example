@@ -1,0 +1,8 @@
+---
+ApplicationName: "myapp"
+ApplicationVersion: "1.0"
+GCSBucketName: "my-fst-bucket"
+GoogleCertIssuer: "1234567890-asdfjasdfasknmnm23@developer.gserviceaccount.com"
+GoogleProjectID: "1234567890"
+GoogleServiceCertFilename: "gscert.p12"
+GoogleCertPassphrase: "notasecret"

@@ -1,5 +1,7 @@
 *.a
 *.lex
+*.yml
 **/src/endings/*.fst
 out
 Gemfile.lock
+*.p12
