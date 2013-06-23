@@ -1,4 +1,7 @@
 require 'rubygems'
+
+require 'rake/clean'
+
 require 'google/api_client'
 require 'yaml'
 
@@ -6,6 +9,8 @@ options = YAML.load_file "config.yml"
 
 FstsToUpload = FileList['**/*.att']
 FstsToCompress = FstsToUpload.ext("atz")
+
+CLEAN.include(FstsToCompress)
 
 desc "Upload final AT&T FSTs to Google Cloud Storage."
 
@@ -36,7 +41,7 @@ task :upload_parsers => :compress_parsers do
   FstsToCompress.each do |fst|
     lang = File.dirname(fst).split(/\//)[0]
     media = Google::APIClient::UploadIO.new File.open(fst), "application/x-gzip"
-    puts "uploading #{fst} as #{BucketName}:#{lang}/#{File.basename(fst)}"
+    puts "uploading #{fst} as #{options['GCSBucketName']}:#{lang}/#{File.basename(fst)}"
     result = client.execute(
     :api_method => storage.objects.insert,
     :parameters => {
