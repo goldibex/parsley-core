@@ -9,7 +9,12 @@ class MorpheusLemmaReader < Nokogiri::XML::SAX::Document
       File.unlink @out_filename
     end
     @parse_info = YAML.load_file("definition.yaml")
-    @morph_lookup = @parse_info["inflection_lookup"]
+    @morph_lookup = {}
+    @parse_info["dictionary"].each do |k, v|
+      v.each do |bit|
+        @morph_lookup[bit] = k
+      end
+    end
   end
   
   def start_document

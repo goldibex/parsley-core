@@ -6,7 +6,12 @@ class MorpheusXMLReader < Nokogiri::XML::SAX::Document
     @acc = ""
     @lex_filename = lex_filename
     @parse_info = YAML.load_file("definition.yaml")
-    @morph_lookup = @parse_info["inflection_lookup"]
+    @morph_lookup = {}
+    @parse_info["dictionary"].each do |k, v|
+      v.each do |bit|
+        @morph_lookup[bit] = k
+      end
+    end
   end
   
   def start_document
