@@ -1008,9 +1008,7 @@
     <le>eneco</le>
     <vs>
       <stem>e_ne^c</stem>
-      <itype>
-        <itype>are_vb</itype>
-      </itype>
+      <itype>are_vb</itype>
     </vs>
     <de>
       <stem>e_ni^c</stem>
@@ -1565,7 +1563,7 @@
     <vb>
       <form>inquie_bat</form>
       <itype>irreg_pp1</itype>
-      <morph>3rd sg imper ind act</morph>
+      <morph>3rd sg imperf ind act</morph>
     </vb>
     <vb>
       <form>inquie_s</form>
@@ -1972,7 +1970,7 @@
     </vs>
     <vs>
       <stem>neca_t</stem>
-      <itype>ppf4</itype>
+      <itype>pp4</itype>
       <morph>no_comp</morph>
     </vs>
     <vs>
@@ -2735,7 +2733,7 @@
     <vb>
       <form>saevisse</form>
       <itype>perfstem</itype>
-      <morph>inf act per syncope</morph>
+      <morph>inf act perf syncope</morph>
     </vb>
     <vs>
       <stem>saevi_t</stem>
@@ -2771,9 +2769,7 @@
     </de>
     <vs>
       <stem>si^l</stem>
-      <itype>
-        <itype>ire_vb</itype>
-      </itype>
+      <itype>ire_vb</itype>
       <morph>comp_only</morph>
     </vs>
   </entry>
@@ -3123,7 +3119,7 @@
     </vs>
     <vs>
       <stem>subrept</stem>
-      <itype>ppf</itype>
+      <itype>pp4</itype>
       <morph>orth</morph>
     </vs>
     <vs>
@@ -3628,36 +3624,121 @@
       <morph>orth</morph>
     </de>
   </entry>
-  <entry><le>edo#1</le><vs><stem>ed</stem><itype>conj3</itype></vs><vs><stem>e_d</stem><itype>perfstem</itype></vs><vs><stem>e_s</stem><itype>pp4</itype></vs>
-#
-<vb><form>e_s</form><itype>irreg_pp1</itype><morph>2nd sg pres ind act archaic</morph></vb>
-<vb><form>e_st</form><itype>irreg_pp1</itype><morph>3rd sg pres ind act archaic</morph></vb>
-<vb><form>e_stis</form><itype>irreg_pp1</itype><morph>2nd pl pres ind act archaic</morph></vb>
-#
-<vb><form>edim</form><itype>irreg_pp1</itype><morph>1st sg pres subj act archaic</morph></vb>
-<vb><form>edis</form><itype>irreg_pp1</itype><morph>2nd sg pres subj act archaic</morph></vb>
-<vb><form>edit</form><itype>irreg_pp1</itype><morph>3rd sg pres subj act archaic</morph></vb>
-<vb><form>edimus</form><itype>irreg_pp1</itype><morph>1st pl pres subj act archaic</morph></vb>
-<vb><form>editis</form><itype>irreg_pp1</itype><morph>2nd pl pres subj act archaic</morph></vb>
-<vb><form>edint</form><itype>irreg_pp1</itype><morph>3rd pl pres subj act archaic</morph></vb>
-#
-<vb><form>e_sse_s</form><itype>irreg_pp1</itype><morph>2nd sg imperf subj act archaic</morph></vb>
-<vb><form>e_sset</form><itype>irreg_pp1</itype><morph>3rd sg imperf subj act archaic</morph></vb>
-<vb><form>e_sse_mus</form><itype>irreg_pp1</itype><morph>1st pl imperf subj act archaic</morph></vb>
-<vb><form>e_sse_tis</form><itype>irreg_pp1</itype><morph>2nd pl imperf subj act archaic</morph></vb>
-<vb><form>e_ssent</form><itype>irreg_pp1</itype><morph>3rd pl imperf subj act archaic</morph></vb>
-#
-<vb><form>e_s</form><itype>irreg_pp1</itype><morph>2nd sg pres imperat act archaic</morph></vb>
-<vb><form>e_ste</form><itype>irreg_pp1</itype><morph>2nd pl pres imperat act archaic</morph></vb>
-#
-<vb><form>e_sto</form><itype>irreg_pp1</itype><morph>2nd sg pres imperat act archaic</morph></vb>
-<vb><form>e_sto</form><itype>irreg_pp1</itype><morph>3rd sg pres imperat act archaic</morph></vb>
-<vb><form>e_stote</form><itype>irreg_pp1</itype><morph>2nd pl pres imperat act archaic</morph></vb>
-#
-<vb><form>e_sse</form><itype>irreg_pp1</itype><morph>pres inf act</morph></vb>
-
-
-</entry>
+  <entry>
+    <le>edo#1</le>
+    <vs>
+      <stem>ed</stem>
+      <itype>conj3</itype>
+    </vs>
+    <vs>
+      <stem>e_d</stem>
+      <itype>perfstem</itype>
+    </vs>
+    <vs>
+      <stem>e_s</stem>
+      <itype>pp4</itype>
+    </vs>
+    <vb>
+      <form>e_s</form>
+      <itype>irreg_pp1</itype>
+      <morph>2nd sg pres ind act archaic</morph>
+    </vb>
+    <vb>
+      <form>e_st</form>
+      <itype>irreg_pp1</itype>
+      <morph>3rd sg pres ind act archaic</morph>
+    </vb>
+    <vb>
+      <form>e_stis</form>
+      <itype>irreg_pp1</itype>
+      <morph>2nd pl pres ind act archaic</morph>
+    </vb>
+    <vb>
+      <form>edim</form>
+      <itype>irreg_pp1</itype>
+      <morph>1st sg pres subj act archaic</morph>
+    </vb>
+    <vb>
+      <form>edis</form>
+      <itype>irreg_pp1</itype>
+      <morph>2nd sg pres subj act archaic</morph>
+    </vb>
+    <vb>
+      <form>edit</form>
+      <itype>irreg_pp1</itype>
+      <morph>3rd sg pres subj act archaic</morph>
+    </vb>
+    <vb>
+      <form>edimus</form>
+      <itype>irreg_pp1</itype>
+      <morph>1st pl pres subj act archaic</morph>
+    </vb>
+    <vb>
+      <form>editis</form>
+      <itype>irreg_pp1</itype>
+      <morph>2nd pl pres subj act archaic</morph>
+    </vb>
+    <vb>
+      <form>edint</form>
+      <itype>irreg_pp1</itype>
+      <morph>3rd pl pres subj act archaic</morph>
+    </vb>
+    <vb>
+      <form>e_sse_s</form>
+      <itype>irreg_pp1</itype>
+      <morph>2nd sg imperf subj act archaic</morph>
+    </vb>
+    <vb>
+      <form>e_sset</form>
+      <itype>irreg_pp1</itype>
+      <morph>3rd sg imperf subj act archaic</morph>
+    </vb>
+    <vb>
+      <form>e_sse_mus</form>
+      <itype>irreg_pp1</itype>
+      <morph>1st pl imperf subj act archaic</morph>
+    </vb>
+    <vb>
+      <form>e_sse_tis</form>
+      <itype>irreg_pp1</itype>
+      <morph>2nd pl imperf subj act archaic</morph>
+    </vb>
+    <vb>
+      <form>e_ssent</form>
+      <itype>irreg_pp1</itype>
+      <morph>3rd pl imperf subj act archaic</morph>
+    </vb>
+    <vb>
+      <form>e_s</form>
+      <itype>irreg_pp1</itype>
+      <morph>2nd sg pres imperat act archaic</morph>
+    </vb>
+    <vb>
+      <form>e_ste</form>
+      <itype>irreg_pp1</itype>
+      <morph>2nd pl pres imperat act archaic</morph>
+    </vb>
+    <vb>
+      <form>e_sto</form>
+      <itype>irreg_pp1</itype>
+      <morph>2nd sg pres imperat act archaic</morph>
+    </vb>
+    <vb>
+      <form>e_sto</form>
+      <itype>irreg_pp1</itype>
+      <morph>3rd sg pres imperat act archaic</morph>
+    </vb>
+    <vb>
+      <form>e_stote</form>
+      <itype>irreg_pp1</itype>
+      <morph>2nd pl pres imperat act archaic</morph>
+    </vb>
+    <vb>
+      <form>e_sse</form>
+      <itype>irreg_pp1</itype>
+      <morph>pres inf act</morph>
+    </vb>
+  </entry>
   <entry>
     <le>volo#1</le>
     <vb>
@@ -6309,10 +6390,17 @@
       <morph>dep</morph>
     </de>
   </entry>
-  <entry><le>aequiparo</le><de><stem>aequi^pa^r</stem><itype>are_vb</itype></de>
-# aequiperare in livy 37
-<de><stem>aequi^pe^r</stem><itype>are_vb</itype></de>
-</entry>
+  <entry>
+    <le>aequiparo</le>
+    <de>
+      <stem>aequi^pa^r</stem>
+      <itype>are_vb</itype>
+    </de>
+    <de>
+      <stem>aequi^pe^r</stem>
+      <itype>are_vb</itype>
+    </de>
+  </entry>
   <entry>
     <le>aequivaleo</le>
     <vs>
@@ -66496,7 +66584,7 @@
     <vb>
       <form>i_sse</form>
       <itype>irreg_pp2</itype>
-      <morph>perf inf act syncop</morph>
+      <morph>perf inf act syncope</morph>
     </vb>
     <vb>
       <form>iens</form>
@@ -67316,7 +67404,7 @@
     <vb>
       <form>de_-peri_sse</form>
       <itype>irreg_pp2</itype>
-      <morph>perf inf act syncop</morph>
+      <morph>perf inf act syncope</morph>
     </vb>
     <vb>
       <form>de_-periens</form>
@@ -68086,7 +68174,7 @@
     <vb>
       <form>dis-peri_sse</form>
       <itype>irreg_pp2</itype>
-      <morph>perf inf act syncop</morph>
+      <morph>perf inf act syncope</morph>
     </vb>
     <vb>
       <form>dis-periens</form>
@@ -70077,33 +70165,33 @@ abs@ens_adj	irreg_pp1 pres part act
     </vb>
     <vb>
       <form>pro_dero_</form>
-      <itype>fut</itype>
-      <morph>ind act 1st sg</morph>
+      <itype>irreg_fut</itype>
+      <morph>fut ind act 1st sg</morph>
     </vb>
     <vb>
       <form>pro_deris</form>
-      <itype>fut</itype>
-      <morph>ind act 2nd sg</morph>
+      <itype>irreg_fut</itype>
+      <morph>fut ind act 2nd sg</morph>
     </vb>
     <vb>
       <form>pro_derit</form>
-      <itype>fut</itype>
-      <morph>ind act 3rd sg</morph>
+      <itype>irreg_fut</itype>
+      <morph>fut ind act 3rd sg</morph>
     </vb>
     <vb>
       <form>pro_derimus</form>
-      <itype>fut</itype>
-      <morph>ind act 1st pl</morph>
+      <itype>irreg_fut</itype>
+      <morph>fut ind act 1st pl</morph>
     </vb>
     <vb>
       <form>pro_deritis</form>
-      <itype>fut</itype>
-      <morph>ind act 2nd pl</morph>
+      <itype>irreg_fut</itype>
+      <morph>fut ind act 2nd pl</morph>
     </vb>
     <vb>
       <form>pro_derunt</form>
-      <itype>fut</itype>
-      <morph>ind act 3rd pl</morph>
+      <itype>irreg_fut</itype>
+      <morph>fut ind act 3rd pl</morph>
     </vb>
     <vb>
       <form>pro_deram</form>

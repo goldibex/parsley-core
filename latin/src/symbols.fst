@@ -7,7 +7,7 @@
 #tense# = <pres><imperf><fut><perf><plup><futperf>
 #mood# = <ind><inf><imperat><subj><gerundive><supine><part>
 #voice# = <act><pass>
-#degree# = <pos><comp><superl><irreg_superl>
+#degree# = <pos><comp><superl><irreg_comp><irreg_superl>
 #morph# = #person# #number# #gender# #case# #tense# #mood# #voice# #degree#
 
 #time# = <early><late>

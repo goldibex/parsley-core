@@ -10,9 +10,9 @@ options = YAML.load_file "config.yml"
 FstsToUpload = FileList['**/*.att']
 FstsToCompress = FstsToUpload.ext("atz")
 
-CLEAN.include(FstsToCompress)
+GrammarsToUpload = FileList['**/grammar.json']
 
-desc "Upload final AT&T FSTs to Google Cloud Storage."
+CLEAN.include(FstsToCompress)
 
 rule '.atz' => ['.att'] do |t|
   sh "gzip -c #{t.source} > #{t.name}"
@@ -20,6 +20,7 @@ end
 
 task :compress_parsers => FstsToCompress
 
+desc "Upload final AT&T FSTs and grammars to Google Cloud Storage."
 task :upload_parsers => :compress_parsers do
   key = Google::APIClient::KeyUtils.load_from_pkcs12(options['GoogleServiceCertFilename'], options['GoogleCertPassphrase'])
 
@@ -47,6 +48,24 @@ task :upload_parsers => :compress_parsers do
     :parameters => {
       :bucket => options['GCSBucketName'],
       :name => "#{lang}/#{File.basename(fst)}",
+      :uploadType => "resumable"
+    },
+    :body_object => { :contentType => "application/x-gzip"},
+    :media => media
+  )
+    upload = result.resumable_upload
+    client.execute(upload)
+  end
+
+  GrammarsToUpload.each do |grammar|
+    lang = File.dirname(grammar).split(/\//)[0]
+    media = Google::APIClient::UploadIO.new File.open(grammar), "application/json"
+    puts "uploading #{grammar} as #{options['GCSBucketName']}:#{lang}/#{File.basename(grammar)}"
+    result = client.execute(
+    :api_method => storage.objects.insert,
+    :parameters => {
+      :bucket => options['GCSBucketName'],
+      :name => "#{lang}/#{File.basename(grammar)}",
       :uploadType => "resumable"
     },
     :body_object => { :contentType => "application/x-gzip"},
