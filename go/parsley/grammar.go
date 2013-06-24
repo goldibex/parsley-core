@@ -16,15 +16,15 @@ var (
 )
 
 type ParsePart struct {
-  Fragment string
-  Component string
-  Tokens []string
+  Fragment string `json:"fragment"`
+  Component string `json:"component"`
+  Tokens []string `json:"tokens"`
 }
 
 type Parse struct {
-  Parts []ParsePart
-  Summary string
-  Form string
+  Parts []ParsePart `json:"parse_parts"`
+  Summary string `json:"summary"`
+  Form string `json:"form"`
 }
 
 type Grammar struct {
@@ -83,7 +83,9 @@ func (g *Grammar) Interpret(fstOut string) (*Parse, error) {
 
   if g.Order != nil {
     for _, k := range g.Order {
-      summaryBits = append(summaryBits, tokenForType[k])
+      if typeToken, ok := tokenForType[k]; ok {
+        summaryBits = append(summaryBits, typeToken)
+      }
     }
   } else {
     for _, v := range tokenForType {

@@ -43,12 +43,7 @@ end
 
 file "out/grammar.json" do
   endings = Array.new
-  ENDING_FILES.each do |filename|
-    endings << File.basename(filename, ".asc")
-  end
-  grammar = YAML.load_file("definition.yaml")
-  grammar['dictionary']['endings'] = endings
-  
+  grammar = YAML.load_file("definition.yaml")  
   grammar_json = File.open("out/grammar.json", "w")
   grammar_json.print grammar.to_json
 end
