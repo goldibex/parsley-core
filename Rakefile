@@ -7,11 +7,12 @@ require 'yaml'
 
 options = YAML.load_file "config.yml"
 
-FstsToUpload = FileList['**/*.att']
-FstsToCompress = FstsToUpload.ext("atz")
+Fsts = FileList['**/*.att']
+FstsToCompress = Fsts.ext("atz")
 
 GrammarsToUpload = FileList['**/grammar.json']
 
+CLEAN.include(GrammarsToUpload)
 CLEAN.include(FstsToCompress)
 
 rule '.atz' => ['.att'] do |t|
@@ -62,15 +63,15 @@ task :upload_parsers => :compress_parsers do
     media = Google::APIClient::UploadIO.new File.open(grammar), "application/json"
     puts "uploading #{grammar} as #{options['GCSBucketName']}:#{lang}/#{File.basename(grammar)}"
     result = client.execute(
-    :api_method => storage.objects.insert,
-    :parameters => {
-      :bucket => options['GCSBucketName'],
-      :name => "#{lang}/#{File.basename(grammar)}",
-      :uploadType => "resumable"
-    },
-    :body_object => { :contentType => "application/x-gzip"},
-    :media => media
-  )
+      :api_method => storage.objects.insert,
+      :parameters => {
+        :bucket => options['GCSBucketName'],
+        :name => "#{lang}/#{File.basename(grammar)}",
+        :uploadType => "resumable"
+      },
+      :body_object => { :contentType => "application/json"},
+      :media => media
+    )
     upload = result.resumable_upload
     client.execute(upload)
   end

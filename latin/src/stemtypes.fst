@@ -16,7 +16,7 @@
 
 #indecl1a# = <adverb><alphabetic><abbrev><conj><connect><exclam><expletive><indecl><numeral><particle><prep>
 #indecl1# = <article><demonstr><relative><rel_pron><pron_adj1>
-#indecl2# = <irreg_nom2>
+#indecl2# = <indecl_nom><irreg_nom2>
 #indecl3# = <interrog><demonstr><pron1><pron2><reflex><indecl_noun><indecl_adj><indef><indef_pron><indef_rel_pron><interrog><irreg_nom3><pron3><pron_adj3>
 #indecl4# = <irreg_pp1><irreg_pp2><irreg_fut>
 
