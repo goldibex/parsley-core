@@ -1,13 +1,13 @@
 package parsley
 
 type Analysis struct {
-  Lemma string
-  Parses []Parse
+  Lemma string `json:"lemma"`
+  Parses []Parse `json:"parses"`
 }
 
 type Result struct {
-  Query string
-  Analyses []Analysis
+  Query string `json:"query"`
+  Analyses []Analysis `json:"analyses"`
 }
 
 type Parser struct {
