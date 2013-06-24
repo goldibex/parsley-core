@@ -19,9 +19,9 @@ $indecl-stems$ = [#all-but-stemtype#]+ [#indecl#] || $stems$
 $ends$ = "<out/endings.a>" || $mask_symbols_and_case$
 $morph$ = $stems$ {\:\:}:<> $ends$
 
-% exclude derived types from the total alphabet so they don't bet
+% exclude derived types from the total alphabet so they don't get
 % scooped up by the Kleene star
-ALPHABET = [#character#] [#morph##stemtype##time##type#<no_comp>]
+ALPHABET = [#character#] [#morph##stemtype##compounding##contraction##syncope##nountype##usage##time##accentuation##reduplication##deponency#]
 
 $deriv_separator$ = .* ([#deriv#] {\:\:}:<>)? .*
 $acceptor$ = "<out/acceptor.a>"

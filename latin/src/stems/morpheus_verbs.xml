@@ -400,12 +400,12 @@
     <de>
       <stem>assent</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
     <de>
       <stem>adsent</stem>
       <itype>are_vb</itype>
-      <morph>dep orth</morph>
+      <morph>pass dep orth</morph>
     </de>
   </entry>
   <entry>
@@ -428,7 +428,7 @@
     <vs>
       <stem>aus</stem>
       <itype>pp4</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </vs>
     <vb>
       <form>ausim</form>
@@ -1268,12 +1268,12 @@
     <vs>
       <stem>fa^t</stem>
       <itype>conj2</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </vs>
     <vs>
       <stem>fi^t</stem>
       <itype>conj2</itype>
-      <morph>dep comp_only</morph>
+      <morph>pass dep comp_only</morph>
     </vs>
     <vs>
       <stem>fass</stem>
@@ -1365,7 +1365,7 @@
     <vs>
       <stem>fru^</stem>
       <itype>conj3</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </vs>
     <vs>
       <stem>fruct</stem>
@@ -1377,12 +1377,12 @@
     <vs>
       <stem>fung</stem>
       <itype>conj3</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </vs>
     <vs>
       <stem>funct</stem>
       <itype>pp4</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </vs>
   </entry>
   <entry>
@@ -1420,17 +1420,17 @@
     <vs>
       <stem>gra^d</stem>
       <itype>conj3_io</itype>
-      <morph>dep no_comp</morph>
+      <morph>pass dep no_comp</morph>
     </vs>
     <vs>
       <stem>gre^d</stem>
       <itype>conj3_io</itype>
-      <morph>dep comp_only</morph>
+      <morph>pass dep comp_only</morph>
     </vs>
     <vs>
       <stem>gress</stem>
       <itype>pp4</itype>
-      <morph>dep </morph>
+      <morph>pass dep </morph>
     </vs>
   </entry>
   <entry>
@@ -1514,7 +1514,7 @@
     <vs>
       <stem>implicisc</stem>
       <itype>conj3</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </vs>
   </entry>
   <entry>
@@ -1647,7 +1647,7 @@
     <vs>
       <stem>i_rasc</stem>
       <itype>conj3</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </vs>
     <vs>
       <stem>i_ra_t</stem>
@@ -1726,12 +1726,12 @@
     <vs>
       <stem>la_b</stem>
       <itype>conj3</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </vs>
     <vs>
       <stem>laps</stem>
       <itype>pp4</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </vs>
   </entry>
   <entry>
@@ -1788,7 +1788,7 @@
     <vs>
       <stem>lo^qu</stem>
       <itype>conj3</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </vs>
     <vs>
       <stem>lo^cu_t</stem>
@@ -1864,7 +1864,7 @@
     <vs>
       <stem>mo^r</stem>
       <itype>conj4</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </vs>
     <vs>
       <stem>mo^rit</stem>
@@ -2026,17 +2026,17 @@
     <vs>
       <stem>ni_t</stem>
       <itype>conj3</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </vs>
     <vs>
       <stem>ni_s</stem>
       <itype>pp4</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </vs>
     <vs>
       <stem>ni_x</stem>
       <itype>pp4</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </vs>
   </entry>
   <entry>
@@ -2213,12 +2213,12 @@
     <vs>
       <stem>or</stem>
       <itype>conj4</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </vs>
     <vs>
       <stem>or</stem>
       <itype>conj3</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </vs>
     <vs>
       <stem>ort</stem>
@@ -3449,7 +3449,7 @@
     <vs>
       <stem>ulcisc</stem>
       <itype>conj3</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </vs>
     <vs>
       <stem>ult</stem>
@@ -3461,7 +3461,7 @@
     <vs>
       <stem>ut</stem>
       <itype>conj3</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </vs>
     <vs>
       <stem>us</stem>
@@ -3511,7 +3511,7 @@
     <vs>
       <stem>ver</stem>
       <itype>conj2</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </vs>
     <vs>
       <stem>veri_t</stem>
@@ -4149,7 +4149,7 @@
     <vs>
       <stem>adipisc</stem>
       <itype>conj3</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </vs>
     <vs>
       <stem>adept</stem>
@@ -4442,7 +4442,7 @@
     <de>
       <stem>a^b-o_mi^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -5087,7 +5087,7 @@
     <de>
       <stem>a^ce_di</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -5285,7 +5285,7 @@
     <de>
       <stem>a^d-a^qu</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -5598,7 +5598,7 @@
     <de>
       <stem>a^d-hort</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -5777,7 +5777,7 @@
     <de>
       <stem>adju_t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -5839,7 +5839,7 @@
     <de>
       <stem>admi^ni^cu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -5854,7 +5854,7 @@
     <de>
       <stem>ad-mi_r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -5892,7 +5892,7 @@
     <de>
       <stem>ad-mo^de^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -5900,7 +5900,7 @@
     <de>
       <stem>ad-mo^du^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -6081,7 +6081,7 @@
     <de>
       <stem>a^d-oscu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -6132,7 +6132,7 @@
     <de>
       <stem>a^du^lescenti</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -6226,7 +6226,7 @@
     <de>
       <stem>ad-ve^ne^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -6270,7 +6270,7 @@
     <de>
       <stem>advers</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -6336,7 +6336,7 @@
     <de>
       <stem>adze_l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -6351,7 +6351,7 @@
     <de>
       <stem>aedi^tu^m</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -6387,7 +6387,7 @@
     <de>
       <stem>aemu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -6471,7 +6471,7 @@
     <de>
       <stem>affect</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -6586,7 +6586,7 @@
     <de>
       <stem>af-f</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -6653,7 +6653,7 @@
     <de>
       <stem>agge^ni^cu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -6783,7 +6783,7 @@
     <de>
       <stem>agri^co^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -7009,7 +7009,7 @@
     <de>
       <stem>al-luct</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -7057,7 +7057,7 @@
     <de>
       <stem>alterc</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -7079,7 +7079,7 @@
     <de>
       <stem>a_lu_ci^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -7241,7 +7241,7 @@
     <de>
       <stem>amplex</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -7270,7 +7270,7 @@
     <de>
       <stem>ampull</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -7313,7 +7313,7 @@
     <de>
       <stem>ancill</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -7363,7 +7363,7 @@
     <de>
       <stem>a^ni_li^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -7488,7 +7488,7 @@
     <de>
       <stem>anno_n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -7709,7 +7709,7 @@
     <de>
       <stem>antest</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -7825,7 +7825,7 @@
     <de>
       <stem>a^po^ri</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -8026,7 +8026,7 @@
     <de>
       <stem>ap-pre^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -8141,7 +8141,7 @@
     <de>
       <stem>a_^pri_c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -8156,7 +8156,7 @@
     <de>
       <stem>a^qu</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -8171,7 +8171,7 @@
     <de>
       <stem>arbi^tr</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -8244,7 +8244,7 @@
     <de>
       <stem>argu_ment</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -8267,7 +8267,7 @@
     <de>
       <stem>argu_t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -8528,7 +8528,7 @@
     <de>
       <stem>aspern</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -8572,7 +8572,7 @@
     <de>
       <stem>as-sell</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -8939,7 +8939,7 @@
     <de>
       <stem>a-sti^pu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -9150,7 +9150,7 @@
     <de>
       <stem>at-test</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -9372,7 +9372,7 @@
     <de>
       <stem>aucti^o_n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -9401,7 +9401,7 @@
     <de>
       <stem>aucto_r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -9416,7 +9416,7 @@
     <de>
       <stem>aucu^p</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -9463,7 +9463,7 @@
     <de>
       <stem>augu^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -9499,7 +9499,7 @@
     <de>
       <stem>auri_g</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -9528,7 +9528,7 @@
     <de>
       <stem>auspi^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -9630,7 +9630,7 @@
     <de>
       <stem>a_vers</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -9674,7 +9674,7 @@
     <de>
       <stem>bacch</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -9759,7 +9759,7 @@
     <de>
       <stem>baub</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -9781,7 +9781,7 @@
     <de>
       <stem>belli^-ge^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -9841,7 +9841,7 @@
     <de>
       <stem>be^nign</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -9973,7 +9973,7 @@
     <de>
       <stem>bo^vi_n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -10009,7 +10009,7 @@
     <de>
       <stem>bu^bulci^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -10149,7 +10149,7 @@
     <de>
       <stem>caeri^mo_ni</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -10558,7 +10558,7 @@
     <de>
       <stem>carni^fi^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -10616,7 +10616,7 @@
     <de>
       <stem>castra^-me_t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -10666,7 +10666,7 @@
     <de>
       <stem>caupo_n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -10681,7 +10681,7 @@
     <de>
       <stem>causi^fi^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -10689,7 +10689,7 @@
     <de>
       <stem>caus</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -10740,7 +10740,7 @@
     <de>
       <stem>ca^vill</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -10904,7 +10904,7 @@
     <de>
       <stem>cert</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -10954,7 +10954,7 @@
     <de>
       <stem>ci^ca_tri_c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -11026,7 +11026,7 @@
     <de>
       <stem>circu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -11455,7 +11455,7 @@
     <de>
       <stem>circum-me_t</stem>
       <itype>ire_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -11965,7 +11965,7 @@
     <de>
       <stem>circum-va^g</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -11980,7 +11980,7 @@
     <de>
       <stem>circumvecti^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -12486,7 +12486,7 @@
     <de>
       <stem>co_ci^o_n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -12531,7 +12531,7 @@
     <de>
       <stem>co^-e^pu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -12723,7 +12723,7 @@
     <de>
       <stem>co^-hort</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -12815,7 +12815,7 @@
     <de>
       <stem>col-laet</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -12939,7 +12939,7 @@
     <de>
       <stem>colli_-mi^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -13037,7 +13037,7 @@
     <de>
       <stem>col-luct</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -13132,7 +13132,7 @@
     <de>
       <stem>co^lumb</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -13180,12 +13180,12 @@
     <de>
       <stem>co_miss</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
     <de>
       <stem>co_mis</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -13207,7 +13207,7 @@
     <de>
       <stem>co^mi^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -13268,7 +13268,7 @@
     <de>
       <stem>commandu_-c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -13329,7 +13329,7 @@
     <de>
       <stem>com-me^di^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -13383,7 +13383,7 @@
     <de>
       <stem>comment</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -13398,7 +13398,7 @@
     <de>
       <stem>commerci</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -13406,7 +13406,7 @@
     <de>
       <stem>com-merc</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -13490,7 +13490,7 @@
     <de>
       <stem>com-mi^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -13535,7 +13535,7 @@
     <de>
       <stem>com-mi^se^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -13660,7 +13660,7 @@
     <de>
       <stem>com-mo^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -13758,7 +13758,7 @@
     <de>
       <stem>com-murmu^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -13859,7 +13859,7 @@
     <de>
       <stem>com-part</stem>
       <itype>ire_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -14140,7 +14140,7 @@
     <de>
       <stem>complex</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -14511,7 +14511,7 @@
     <de>
       <stem>concert</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -14770,7 +14770,7 @@
     <de>
       <stem>con-cri_mi^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -14933,7 +14933,7 @@
     <de>
       <stem>con-de_lect</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -15784,7 +15784,7 @@
     <de>
       <stem>con-ju_cund</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -15846,7 +15846,7 @@
     <de>
       <stem>co_n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -16014,7 +16014,7 @@
     <de>
       <stem>conscr</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -16066,7 +16066,7 @@
     <de>
       <stem>con-sect</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -16107,7 +16107,7 @@
     <de>
       <stem>con-sermo_n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -16227,7 +16227,7 @@
     <de>
       <stem>con-so_l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -16283,7 +16283,7 @@
     <de>
       <stem>conspi^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -16579,7 +16579,7 @@
     <de>
       <stem>consult</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -16678,7 +16678,7 @@
     <de>
       <stem>con-techn</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -16715,7 +16715,7 @@
     <de>
       <stem>con-templ</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -16820,7 +16820,7 @@
     <de>
       <stem>con-test</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -16916,7 +16916,7 @@
     <de>
       <stem>conti^o_n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -17067,7 +17067,7 @@
     <de>
       <stem>contro_vers</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -17132,7 +17132,7 @@
     <de>
       <stem>con-tu_t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -17140,7 +17140,7 @@
     <de>
       <stem>con-va_d</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -17285,7 +17285,7 @@
     <de>
       <stem>convers</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -17405,7 +17405,7 @@
     <de>
       <stem>convi_v</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -17500,7 +17500,7 @@
     <de>
       <stem>co^-o^pe^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -17526,7 +17526,7 @@
     <de>
       <stem>co_pi</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -17541,7 +17541,7 @@
     <de>
       <stem>co_-pu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -17549,7 +17549,7 @@
     <de>
       <stem>co_pu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -17593,7 +17593,7 @@
     <de>
       <stem>corni_c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -17775,7 +17775,7 @@
     <de>
       <stem>cor-rusp</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -17912,7 +17912,7 @@
     <de>
       <stem>cri_mi^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -18108,7 +18108,7 @@
     <de>
       <stem>cunct</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -18288,7 +18288,7 @@
     <de>
       <stem>de^-argu_ment</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -18310,7 +18310,7 @@
     <de>
       <stem>de_-bacch</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -18633,7 +18633,7 @@
     <de>
       <stem>de_-cont</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -18810,7 +18810,7 @@
     <de>
       <stem>de_-dign</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -19280,7 +19280,7 @@
     <de>
       <stem>de_-grass</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -19299,7 +19299,7 @@
     <de>
       <stem>de_-gru_m</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -19353,7 +19353,7 @@
     <de>
       <stem>de^-hort</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -19471,7 +19471,7 @@
     <de>
       <stem>de_-la_ment</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -19500,7 +19500,7 @@
     <de>
       <stem>de_lect</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -19700,7 +19700,7 @@
     <de>
       <stem>de_-luct</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -19896,7 +19896,7 @@
     <de>
       <stem>de_-mi_r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -19981,7 +19981,7 @@
     <de>
       <stem>de_mo^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -20004,7 +20004,7 @@
     <de>
       <stem>de_-mu_ner</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -20153,7 +20153,7 @@
     <de>
       <stem>de^-oscu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -20219,7 +20219,7 @@
     <de>
       <stem>de_-pe^cu_l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -20391,7 +20391,7 @@
     <de>
       <stem>de_-po^pu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -20424,7 +20424,7 @@
     <de>
       <stem>de_-praed</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -20439,7 +20439,7 @@
     <de>
       <stem>de_-pre^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -20488,7 +20488,7 @@
     <de>
       <stem>de_-proeli</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -20991,7 +20991,7 @@
     <de>
       <stem>de_spi^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -21326,7 +21326,7 @@
     <de>
       <stem>de_-test</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -21510,7 +21510,7 @@
     <de>
       <stem>de_-va^g</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -21547,7 +21547,7 @@
     <de>
       <stem>de_-ve^ne^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -21605,7 +21605,7 @@
     <de>
       <stem>de_-vers</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -21948,7 +21948,7 @@
     <de>
       <stem>di_-gla^di</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -21963,7 +21963,7 @@
     <de>
       <stem>dign</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -22158,7 +22158,7 @@
     <de>
       <stem>di_-me_t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -22668,7 +22668,7 @@
     <de>
       <stem>dis-pa_l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -23042,7 +23042,7 @@
     <de>
       <stem>dis-sua_vi</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -23279,7 +23279,7 @@
     <de>
       <stem>di_-va^g</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -23443,7 +23443,7 @@
     <de>
       <stem>do^mi^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -23451,7 +23451,7 @@
     <de>
       <stem>do^mi^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -24100,7 +24100,7 @@
     <de>
       <stem>ef-f</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -24322,7 +24322,7 @@
     <de>
       <stem>e_-ja^cu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -24351,7 +24351,7 @@
     <de>
       <stem>hejul</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -24409,7 +24409,7 @@
     <de>
       <stem>e_-larg</stem>
       <itype>ire_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -24653,7 +24653,7 @@
     <de>
       <stem>e_-luct</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -24723,7 +24723,7 @@
     <de>
       <stem>e_-luxu^ri</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -24867,7 +24867,7 @@
     <de>
       <stem>e_-merc</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -24978,7 +24978,7 @@
     <de>
       <stem>e_-mi_r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -25030,7 +25030,7 @@
     <de>
       <stem>e_-mo^de^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -25038,7 +25038,7 @@
     <de>
       <stem>e_-mo^du^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -25319,7 +25319,7 @@
     <de>
       <stem>e^pu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -25580,7 +25580,7 @@
     <de>
       <stem>e_-va^g</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -26035,7 +26035,7 @@
     <de>
       <stem>ex-amplex</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -26071,7 +26071,7 @@
     <de>
       <stem>ex-a^po^ri</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -26775,7 +26775,7 @@
     <de>
       <stem>ex-hort</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -26964,7 +26964,7 @@
     <de>
       <stem>ex-oscu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -27004,7 +27004,7 @@
     <de>
       <stem>expalp</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -27240,7 +27240,7 @@
     <de>
       <stem>ex-pisc</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -27571,7 +27571,7 @@
     <de>
       <stem>ex-se_^cr</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -27938,7 +27938,7 @@
     <de>
       <stem>exsu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -28326,7 +28326,7 @@
     <de>
       <stem>fa_^bri^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -28352,7 +28352,7 @@
     <de>
       <stem>fa_bu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -28375,7 +28375,7 @@
     <de>
       <stem>fa^ce_ti</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -28417,7 +28417,7 @@
     <de>
       <stem>faene^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -28475,7 +28475,7 @@
     <de>
       <stem>fa^mu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -28512,7 +28512,7 @@
     <de>
       <stem>fa_ri</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -28556,17 +28556,6 @@
     </de>
   </entry>
   <entry>
-    <le>fateor</le>
-    <vs>
-      <stem>fa^t</stem>
-      <itype>conj2</itype>
-    </vs>
-    <vs>
-      <stem>fass</stem>
-      <itype>pp4</itype>
-    </vs>
-  </entry>
-  <entry>
     <le>fatigo</le>
     <de>
       <stem>fa^ti_g</stem>
@@ -28589,7 +28578,7 @@
     <de>
       <stem>fa_t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -28597,7 +28586,7 @@
     <de>
       <stem>fa^tu^</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -28605,7 +28594,7 @@
     <de>
       <stem>fa_tu^</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -29195,7 +29184,7 @@
     <de>
       <stem>fluctu^</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -29246,7 +29235,7 @@
     <de>
       <stem>fo^cill</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -29350,7 +29339,7 @@
     <de>
       <stem>forni^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -29651,7 +29640,7 @@
     <de>
       <stem>fru_ment</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -29677,7 +29666,7 @@
     <de>
       <stem>frustr</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -29706,7 +29695,7 @@
     <de>
       <stem>fru^ti^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -29919,7 +29908,7 @@
     <de>
       <stem>fu_r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -29956,7 +29945,7 @@
     <de>
       <stem>ga^la^ti^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -30136,7 +30125,7 @@
     <de>
       <stem>gesti^cu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -30334,7 +30323,7 @@
     <de>
       <stem>graec</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -30363,7 +30352,7 @@
     <de>
       <stem>grass</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -30371,7 +30360,7 @@
     <de>
       <stem>gra_ti^fi^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -30379,7 +30368,7 @@
     <de>
       <stem>gra_t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -30387,7 +30376,7 @@
     <de>
       <stem>gra_tu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -30591,12 +30580,12 @@
     <de>
       <stem>ha^ri^o^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
     <de>
       <stem>a^ri^o^l</stem>
       <itype>are_vb</itype>
-      <morph>dep orth</morph>
+      <morph>pass dep orth</morph>
     </de>
   </entry>
   <entry>
@@ -30654,7 +30643,7 @@
     <de>
       <stem>hellu^</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -30816,7 +30805,7 @@
     <de>
       <stem>ho^ri^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -30867,7 +30856,7 @@
     <de>
       <stem>hort</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -30882,7 +30871,7 @@
     <de>
       <stem>hort</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -30890,7 +30879,7 @@
     <de>
       <stem>hospi^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -31062,7 +31051,7 @@
     <de>
       <stem>illa^cri^m</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -31260,7 +31249,7 @@
     <de>
       <stem>i^ma_gi^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -31341,7 +31330,7 @@
     <de>
       <stem>i^mi^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -31472,7 +31461,7 @@
     <de>
       <stem>immi^se^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -31528,7 +31517,7 @@
     <de>
       <stem>immo^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -31734,7 +31723,7 @@
     <de>
       <stem>impert</stem>
       <itype>ire_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -31908,7 +31897,7 @@
     <de>
       <stem>impre^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -32246,7 +32235,7 @@
     <de>
       <stem>incarn</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -32254,7 +32243,7 @@
     <de>
       <stem>in-ca^vill</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -32878,7 +32867,7 @@
     <de>
       <stem>in-dign</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -33811,7 +33800,7 @@
     <de>
       <stem>i^n-hort</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -33905,7 +33894,7 @@
     <de>
       <stem>inju_ri</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -34069,7 +34058,7 @@
     <de>
       <stem>i^n-oblect</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -34134,7 +34123,7 @@
     <de>
       <stem>i^n-o^pe^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -34142,7 +34131,7 @@
     <de>
       <stem>i^n-o^pi_n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -34270,7 +34259,7 @@
     <de>
       <stem>in-scru_t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -34315,7 +34304,7 @@
     <de>
       <stem>insect</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -34583,7 +34572,7 @@
     <de>
       <stem>in-spa^ti</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -34752,7 +34741,7 @@
     <de>
       <stem>in-sti^pu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -35588,7 +35577,7 @@
     <de>
       <stem>inter-mi^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -35770,7 +35759,7 @@
     <de>
       <stem>interpre^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -36158,7 +36147,7 @@
     <de>
       <stem>intervers</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -36761,7 +36750,7 @@
     <de>
       <stem>in-vers</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -37080,7 +37069,7 @@
     <de>
       <stem>irri_m</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -37202,7 +37191,7 @@
     <de>
       <stem>i^ti^ne^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -37268,7 +37257,7 @@
     <de>
       <stem>ja^cu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -37290,7 +37279,7 @@
     <de>
       <stem>jo^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -37298,7 +37287,7 @@
     <de>
       <stem>jo^cu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -37413,7 +37402,7 @@
     <de>
       <stem>ju_r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -37446,7 +37435,7 @@
     <de>
       <stem>ju^ve^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -37559,7 +37548,7 @@
     <de>
       <stem>lacri^m</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -37645,7 +37634,7 @@
     <de>
       <stem>laet</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -37696,7 +37685,7 @@
     <de>
       <stem>la_ment</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -37871,7 +37860,7 @@
     <de>
       <stem>la^ti^bu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -37907,7 +37896,7 @@
     <de>
       <stem>la_^tro_ci^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -38034,7 +38023,7 @@
     <de>
       <stem>le_no_ci^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -38116,7 +38105,7 @@
     <de>
       <stem>li^bi_di^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -38182,7 +38171,7 @@
     <de>
       <stem>li^ci^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -38190,7 +38179,7 @@
     <de>
       <stem>lign</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -38442,7 +38431,7 @@
     <de>
       <stem>lo^qui^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -38522,7 +38511,7 @@
     <de>
       <stem>lu_^cr</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -38537,7 +38526,7 @@
     <de>
       <stem>luct</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -38552,7 +38541,7 @@
     <de>
       <stem>lu_di_^cr</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -38582,7 +38571,7 @@
     <de>
       <stem>lu_di^fi^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -38641,7 +38630,7 @@
     <de>
       <stem>lu^p</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -38656,7 +38645,7 @@
     <de>
       <stem>lurc</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -38678,7 +38667,7 @@
     <de>
       <stem>lustr</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -38728,7 +38717,7 @@
     <de>
       <stem>lux</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -38792,7 +38781,7 @@
     <de>
       <stem>ma_chi^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -38986,7 +38975,7 @@
     <de>
       <stem>ma^lign</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -39131,7 +39120,7 @@
     <de>
       <stem>manti^ci^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -39139,7 +39128,7 @@
     <de>
       <stem>manti^cu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -39232,7 +39221,7 @@
     <de>
       <stem>masturb</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -39247,7 +39236,7 @@
     <de>
       <stem>ma_te^ri</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -39309,7 +39298,7 @@
     <de>
       <stem>me^di^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -39324,7 +39313,7 @@
     <de>
       <stem>me^di^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -39395,7 +39384,7 @@
     <de>
       <stem>mendi_c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -39435,7 +39424,7 @@
     <de>
       <stem>merc</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -39476,7 +39465,7 @@
     <de>
       <stem>me^re^tri_c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -39574,7 +39563,7 @@
     <de>
       <stem>me_t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -39676,7 +39665,7 @@
     <de>
       <stem>mi^ni^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -39698,7 +39687,7 @@
     <de>
       <stem>mi^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -39777,7 +39766,7 @@
     <de>
       <stem>mi_r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -39847,7 +39836,7 @@
     <de>
       <stem>mi^se^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -39926,7 +39915,7 @@
     <de>
       <stem>mo^de^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -39941,7 +39930,7 @@
     <de>
       <stem>mo^di^fi^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -39949,7 +39938,7 @@
     <de>
       <stem>mo^du^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -39964,7 +39953,7 @@
     <de>
       <stem>moech</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -40124,7 +40113,7 @@
     <de>
       <stem>mo_ri^ge^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -40150,7 +40139,7 @@
     <de>
       <stem>mo^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -40158,7 +40147,7 @@
     <de>
       <stem>mo_r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -40227,7 +40216,7 @@
     <de>
       <stem>mu_gi^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -40337,7 +40326,7 @@
     <de>
       <stem>mu_ne^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -40366,7 +40355,7 @@
     <de>
       <stem>murmu^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -40402,7 +40391,7 @@
     <de>
       <stem>muss</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -40471,7 +40460,7 @@
     <de>
       <stem>mu_tu^i^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -40479,7 +40468,7 @@
     <de>
       <stem>mu_tu^</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -40508,7 +40497,7 @@
     <de>
       <stem>nanc</stem>
       <itype>ire_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -40537,7 +40526,7 @@
     <de>
       <stem>na^ti^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -40573,7 +40562,7 @@
     <de>
       <stem>na_vi^cu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -40595,7 +40584,7 @@
     <de>
       <stem>ne^bu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -40668,7 +40657,7 @@
     <de>
       <stem>ne^po_t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -40706,7 +40695,7 @@
     <de>
       <stem>nict</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -40728,7 +40717,7 @@
     <de>
       <stem>ni_du^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -40843,7 +40832,7 @@
     <de>
       <stem>nix</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -40980,7 +40969,7 @@
     <de>
       <stem>no^verc</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -41024,7 +41013,7 @@
     <de>
       <stem>nu_g</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -41053,7 +41042,7 @@
     <de>
       <stem>nundi^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -41100,7 +41089,7 @@
     <de>
       <stem>nu_tri_c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -41134,7 +41123,7 @@
     <de>
       <stem>o^b-aemu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -41537,7 +41526,7 @@
     <de>
       <stem>ob-luct</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -41682,7 +41671,7 @@
     <de>
       <stem>o^b-oscu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -41883,7 +41872,7 @@
     <de>
       <stem>obsi^di</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -41985,7 +41974,7 @@
     <de>
       <stem>obso_n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -42271,7 +42260,7 @@
     <de>
       <stem>ob-test</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -42548,7 +42537,7 @@
     <de>
       <stem>ob-vers</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -42870,7 +42859,7 @@
     <de>
       <stem>o^do_r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -43059,7 +43048,7 @@
     <de>
       <stem>o_mi^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -43145,7 +43134,7 @@
     <de>
       <stem>o^pi_n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -43153,7 +43142,7 @@
     <de>
       <stem>o^pi^tu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -43393,7 +43382,7 @@
     <de>
       <stem>orbi^cu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -43450,7 +43439,7 @@
     <de>
       <stem>osci^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -43472,7 +43461,7 @@
     <de>
       <stem>oscu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -43480,7 +43469,7 @@
     <de>
       <stem>ospi^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -43509,7 +43498,7 @@
     <de>
       <stem>pa_bu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -43531,7 +43520,7 @@
     <de>
       <stem>pa_ci^fi^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -43614,7 +43603,7 @@
     <de>
       <stem>pa_l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -43650,7 +43639,7 @@
     <de>
       <stem>pal-p</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -43665,7 +43654,7 @@
     <de>
       <stem>pandi^cu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -43727,7 +43716,7 @@
     <de>
       <stem>pa^ra^si_t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -43989,7 +43978,7 @@
     <de>
       <stem>pa_^tro_ci^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -44123,7 +44112,7 @@
     <de>
       <stem>pe^cu_l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -44280,7 +44269,7 @@
     <de>
       <stem>penn</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -44391,7 +44380,7 @@
     <de>
       <stem>per-bacch</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -44678,7 +44667,7 @@
     <de>
       <stem>per-co_n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -44693,7 +44682,7 @@
     <de>
       <stem>percont</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -44701,7 +44690,7 @@
     <de>
       <stem>percont</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -44811,7 +44800,7 @@
     <de>
       <stem>percunct</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -44992,7 +44981,7 @@
     <de>
       <stem>per-do^mi^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -45057,7 +45046,7 @@
     <de>
       <stem>pe^re^gri_n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -45418,7 +45407,7 @@
     <de>
       <stem>per-graec</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -45492,7 +45481,7 @@
     <de>
       <stem>pe^ri_cli^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -45831,7 +45820,7 @@
     <de>
       <stem>per-mo^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -46016,7 +46005,7 @@
     <de>
       <stem>pe^r-oscu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -46140,7 +46129,7 @@
     <de>
       <stem>perplex</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -46177,7 +46166,7 @@
     <de>
       <stem>per-po^pu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -46192,7 +46181,7 @@
     <de>
       <stem>per-po^t</stem>
       <itype>ire_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -46418,7 +46407,7 @@
     <de>
       <stem>per-scru_t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -46441,7 +46430,7 @@
     <de>
       <stem>persect</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -46668,7 +46657,7 @@
     <de>
       <stem>per-spe^cu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -47203,7 +47192,7 @@
     <de>
       <stem>per-va^g</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -47266,7 +47255,7 @@
     <de>
       <stem>per-ve_n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -47463,7 +47452,7 @@
     <de>
       <stem>phi^lo^so^ph</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -47528,7 +47517,7 @@
     <de>
       <stem>pigne^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -47550,7 +47539,7 @@
     <de>
       <stem>pi_^gri^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -47565,7 +47554,7 @@
     <de>
       <stem>pi_^gr</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -47666,7 +47655,7 @@
     <de>
       <stem>pisc</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -47867,7 +47856,7 @@
     <de>
       <stem>po^e_t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -47919,7 +47908,7 @@
     <de>
       <stem>polli^ci^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -47971,7 +47960,7 @@
     <de>
       <stem>po^pi_n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -47986,7 +47975,7 @@
     <de>
       <stem>po^pu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -48559,7 +48548,7 @@
     <de>
       <stem>praeco_n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -48774,7 +48763,7 @@
     <de>
       <stem>praed</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -48782,7 +48771,7 @@
     <de>
       <stem>prae-d</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -49376,7 +49365,7 @@
     <de>
       <stem>prae-me^di^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -49384,7 +49373,7 @@
     <de>
       <stem>prae-merc</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -49392,7 +49381,7 @@
     <de>
       <stem>prae-me_t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -49428,7 +49417,7 @@
     <de>
       <stem>prae-mi^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -49436,7 +49425,7 @@
     <de>
       <stem>praemi</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -49459,7 +49448,7 @@
     <de>
       <stem>prae-mo_l</stem>
       <itype>ire_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -50047,7 +50036,7 @@
     <de>
       <stem>praesi^di</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -50087,7 +50076,7 @@
     <de>
       <stem>prae-spe^cu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -50123,7 +50112,7 @@
     <de>
       <stem>praestigi</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -50168,7 +50157,7 @@
     <de>
       <stem>praesto_l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -50227,7 +50216,7 @@
     <de>
       <stem>praesu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -50470,7 +50459,7 @@
     <de>
       <stem>prae-test</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -50616,7 +50605,7 @@
     <de>
       <stem>prae-va_ri^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -50770,7 +50759,7 @@
     <de>
       <stem>pre^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -50850,7 +50839,7 @@
     <de>
       <stem>princi^p</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -50951,7 +50940,7 @@
     <de>
       <stem>pro^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -51703,7 +51692,7 @@
     <de>
       <stem>pro-mu_tu^</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -51753,7 +51742,7 @@
     <de>
       <stem>pro^oemi</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -52143,7 +52132,7 @@
     <de>
       <stem>pro-spe^cu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -52331,7 +52320,7 @@
     <de>
       <stem>pro_-test</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -52574,7 +52563,7 @@
     <de>
       <stem>pu^elli^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -52589,7 +52578,7 @@
     <de>
       <stem>pu^gi^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -52896,7 +52885,7 @@
     <de>
       <stem>qua_^dru^pl</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -52951,7 +52940,7 @@
     <de>
       <stem>que^re_l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -52959,7 +52948,7 @@
     <de>
       <stem>que^ri^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -53000,7 +52989,7 @@
     <de>
       <stem>qui^e_t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -53057,7 +53046,7 @@
     <de>
       <stem>ra^ce_m</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -53079,7 +53068,7 @@
     <de>
       <stem>ra_di_c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -53181,7 +53170,7 @@
     <de>
       <stem>ra^ti^o_ci^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -53383,7 +53372,7 @@
     <de>
       <stem>re^cent</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -53735,7 +53724,7 @@
     <de>
       <stem>re^-cord</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -54106,7 +54095,7 @@
     <de>
       <stem>re^d-ord</stem>
       <itype>ire_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -54399,7 +54388,7 @@
     <de>
       <stem>re_^-fra_g</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -54783,7 +54772,7 @@
     <de>
       <stem>re^li^qu</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -54809,7 +54798,7 @@
     <de>
       <stem>re^luct</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -54924,7 +54913,7 @@
     <de>
       <stem>re^me^mo^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -55058,7 +55047,7 @@
     <de>
       <stem>re^-mo^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -55110,7 +55099,7 @@
     <de>
       <stem>re^-mu_ne^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -56152,7 +56141,7 @@
     <de>
       <stem>re_-sti^pu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -56875,7 +56864,7 @@
     <de>
       <stem>rhe_to^ri^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -56969,7 +56958,7 @@
     <de>
       <stem>ri_m</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -57009,7 +56998,7 @@
     <de>
       <stem>rix</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -57198,7 +57187,7 @@
     <de>
       <stem>ru_mi^ge^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -57213,7 +57202,7 @@
     <de>
       <stem>ru_mi^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -57271,7 +57260,7 @@
     <de>
       <stem>ru_r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -57286,7 +57275,7 @@
     <de>
       <stem>rusp</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -57301,7 +57290,7 @@
     <de>
       <stem>rusti^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -57351,7 +57340,7 @@
     <de>
       <stem>sa^_cri^fi^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -57727,7 +57716,7 @@
     <de>
       <stem>scisci^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -57750,7 +57739,7 @@
     <de>
       <stem>sci_t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -57772,7 +57761,7 @@
     <de>
       <stem>scort</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -57816,7 +57805,7 @@
     <de>
       <stem>scru_t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -57824,7 +57813,7 @@
     <de>
       <stem>scru_t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -57847,7 +57836,7 @@
     <de>
       <stem>scurr</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -57922,7 +57911,7 @@
     <de>
       <stem>sect</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -58256,7 +58245,7 @@
     <de>
       <stem>sermo_ci^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -58402,7 +58391,7 @@
     <de>
       <stem>si_de^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -58453,7 +58442,7 @@
     <de>
       <stem>si^li^qu</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -58632,7 +58621,7 @@
     <de>
       <stem>so_l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -58825,7 +58814,7 @@
     <de>
       <stem>spe^cu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -58848,7 +58837,7 @@
     <de>
       <stem>spern</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -59066,7 +59055,7 @@
     <de>
       <stem>sta^bu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -59231,7 +59220,7 @@
     <de>
       <stem>sti^pu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -59261,7 +59250,7 @@
     <de>
       <stem>sto^ma^ch</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -59269,7 +59258,7 @@
     <de>
       <stem>stra_ment</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -59479,7 +59468,7 @@
     <de>
       <stem>su^b-aemu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -59541,7 +59530,7 @@
     <de>
       <stem>sub-bland</stem>
       <itype>ire_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -60126,7 +60115,7 @@
     <de>
       <stem>su^b-o^r</stem>
       <itype>ire_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -60254,7 +60243,7 @@
     <de>
       <stem>subsi^di</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -61131,12 +61120,12 @@
     <de>
       <stem>suffra_g</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
     <de>
       <stem>sub-fra_g</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -61227,7 +61216,7 @@
     <de>
       <stem>suf-fu_r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -62240,7 +62229,7 @@
     <de>
       <stem>su^per-lucr</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -62643,7 +62632,7 @@
     <de>
       <stem>su^per-va^g</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -62658,7 +62647,7 @@
     <de>
       <stem>su^per-vect</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -62775,7 +62764,7 @@
     <de>
       <stem>sup-palp</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -62783,7 +62772,7 @@
     <de>
       <stem>sup-pa^ra^si_t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -63209,7 +63198,7 @@
     <de>
       <stem>suspi^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -63260,7 +63249,7 @@
     <de>
       <stem>sy_co^phant</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -63408,7 +63397,7 @@
     <de>
       <stem>tauro^bo^li</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -63593,7 +63582,7 @@
     <de>
       <stem>tergi^-vers</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -63659,7 +63648,7 @@
     <de>
       <stem>testi^fi^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -63667,7 +63656,7 @@
     <de>
       <stem>test</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -63811,7 +63800,7 @@
     <de>
       <stem>to^le^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -64634,7 +64623,7 @@
     <de>
       <stem>tri_c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -64670,7 +64659,7 @@
     <de>
       <stem>trist</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -64749,7 +64738,7 @@
     <de>
       <stem>tru^ti^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -64757,7 +64746,7 @@
     <de>
       <stem>tuburci^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -64841,7 +64830,7 @@
     <de>
       <stem>tu^multu^</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -64905,7 +64894,7 @@
     <de>
       <stem>tu_t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -64920,7 +64909,7 @@
     <de>
       <stem>tu_t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -65066,7 +65055,7 @@
     <de>
       <stem>u_ri_n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -65096,7 +65085,7 @@
     <de>
       <stem>u_si^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -65208,7 +65197,7 @@
     <de>
       <stem>va^d</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -65245,7 +65234,7 @@
     <de>
       <stem>va^g</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -65385,7 +65374,7 @@
     <de>
       <stem>va_ti^ci^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -65443,7 +65432,7 @@
     <de>
       <stem>ve_li^fi^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -65451,7 +65440,7 @@
     <de>
       <stem>ve_li^t</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -65517,7 +65506,7 @@
     <de>
       <stem>ve^ne^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -65556,7 +65545,7 @@
     <de>
       <stem>ve_n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -65635,7 +65624,7 @@
     <de>
       <stem>ve^re_cund</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -65657,7 +65646,7 @@
     <de>
       <stem>vermi^cu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -65715,7 +65704,7 @@
     <de>
       <stem>versi^fi^c</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -65730,7 +65719,7 @@
     <de>
       <stem>vers</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -65774,6 +65763,14 @@
     <vs>
       <stem>vesc</stem>
       <itype>conj3</itype>
+    </vs>
+  </entry>
+  <entry>
+    <le>vescor</le>
+    <vs>
+      <stem>vesc</stem>
+      <itype>conj3</itype>
+      <morph>pass dep</morph>
     </vs>
   </entry>
   <entry>
@@ -65873,7 +65870,7 @@
     <de>
       <stem>vi_ci_n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -66067,7 +66064,7 @@
     <de>
       <stem>virgi^n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -66139,7 +66136,7 @@
     <de>
       <stem>vi_tu^l</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -66201,7 +66198,7 @@
     <de>
       <stem>vo_ci^fe^r</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>
@@ -66336,7 +66333,7 @@
     <de>
       <stem>vulpi_n</stem>
       <itype>are_vb</itype>
-      <morph>dep</morph>
+      <morph>pass dep</morph>
     </de>
   </entry>
   <entry>

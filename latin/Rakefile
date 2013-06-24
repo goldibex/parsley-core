@@ -49,7 +49,7 @@ file "out/grammar.json" do
   grammar = YAML.load_file("definition.yaml")
   grammar['dictionary']['endings'] = endings
   
-  grammar_json = File.open("grammar.json", "w")
+  grammar_json = File.open("out/grammar.json", "w")
   grammar_json.print grammar.to_json
 end
 

@@ -10,9 +10,17 @@
 #degree# = <pos><comp><superl><irreg_comp><irreg_superl>
 #morph# = #person# #number# #gender# #case# #tense# #mood# #voice# #degree#
 
-#time# = <early><late>
-#type# = <pers_name><person><place><ethnic><river>
-#other# = #deriv# #time# #type# <no_comp>
+#compounding# = <no_comp><comp_only>
+#contraction# = <contr><orth>
+#syncope# = <syncope>
+#nountype# = <ethnic><group><place><river><pers_name>
+#usage# = <poetic>
+#time# = <archaic><early><old><rare><late>
+#accentuation# = <ant_acc>
+#reduplication# = <has_redupl>
+#deponency# = <dep>
+
+#other# = #deriv# #compounding# #contraction# #syncope# #nountype# #usage# #time# #accentuation# #reduplication# #deponency#
 
 #symbol# = #morph# #other# #stemtype#
 
