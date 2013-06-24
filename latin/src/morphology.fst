@@ -6,7 +6,7 @@
 ALPHABET = [#character#] [#symbol#]
 
 $mask_symbols_and_case$ = [A-Z]:[a-z]? ($letter$ | [#symbol#]:<>)+ 
-
+$strip_enclitics$ = <>:{que}? | <>:{ne}? | <>:{ve}?
 
 $stems$ = "<out/stems.a>"
 $derivstems$ = "<out/derivs.a>" || $stems$
@@ -25,4 +25,4 @@ ALPHABET = [#character#] [#morph##stemtype##compounding##contraction##syncope##n
 
 $deriv_separator$ = .* ([#deriv#] {\:\:}:<>)? .*
 $acceptor$ = "<out/acceptor.a>"
-($deriv_separator$ || $acceptor$ || $morph$) | $indecl-stems$
+(($deriv_separator$ || $acceptor$ || $morph$) | $indecl-stems$) $strip_enclitics$
