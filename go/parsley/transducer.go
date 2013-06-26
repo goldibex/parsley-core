@@ -2,6 +2,7 @@ package parsley
 
 import (
   "io"
+  "bufio"
   "bytes"
   "fmt"
 )
@@ -38,12 +39,15 @@ func LoadTransducerSource(source io.Reader, reverseUpperLower bool) (t *Transduc
   edgeCount := 0
   maxFromState := 0
 
-  for {
+  scanner := bufio.NewScanner(source)
+
+  for scanner.Scan() {
+    line := scanner.Text()
     var count int
     if reverseUpperLower {
-      count, err = fmt.Fscanln(source, &fromState, &toState, &out, &in)
+      count, err = fmt.Sscanln(line, &fromState, &toState, &out, &in)
     } else {
-      count, err = fmt.Fscanln(source, &fromState, &toState, &in, &out)
+      count, err = fmt.Sscanln(line, &fromState, &toState, &in, &out)
     }
     switch count {
       case 1:
@@ -70,13 +74,9 @@ func LoadTransducerSource(source io.Reader, reverseUpperLower bool) (t *Transduc
           edges = append(edges, workingEdges...)
           workingEdges = make([]Edge, 1000)
         }
+      default:
+        panic("whoops") // TODO: handle this error better
     }
-    if err != nil && err.Error() != "unexpected newline" {
-      break
-    }
-  }
-  if err != io.EOF {
-    return
   }
   edges = append(edges, workingEdges[0:edgeCount]...)
   err = nil

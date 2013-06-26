@@ -1,6 +1,7 @@
 package parsley
 
 import (
+  "bufio"
   "testing"
   "flag"
   "bytes"
@@ -88,8 +89,10 @@ func TestLoadTransducerSource(t *testing.T) {
   var in, out string
   var fromState, toState int
 
-  for {
-    count, err := fmt.Fscanln(r, &fromState, &toState, &in, &out)
+  scanner := bufio.NewScanner(r)
+  for scanner.Scan() {
+    line := scanner.Text()
+    count, err := fmt.Sscanln(line, &fromState, &toState, &in, &out)
     if count == 0 && err == io.EOF {
       break
     } else if count != 1 && count != 4 {
@@ -124,5 +127,28 @@ func TestLoadTransducerSource(t *testing.T) {
     if err == io.EOF { 
       break
     }
+  }
+}
+
+func BenchmarkLoadTransducerSource(b *testing.B) {
+  var r io.Reader
+  var f *os.File
+  var err error
+
+  if *testTransducerPath != "" {
+    f, err = os.Open(*testTransducerPath); if err != nil {
+      panic(err)
+    }
+    r = f
+  } else {
+    r = strings.NewReader(sampleData)
+  }
+
+  transducer, err := LoadTransducerSource(r, false); if err != nil {
+    b.Errorf("LoadTransducerSource got error %s", err)
+  }
+
+  if transducer == nil {
+    b.Errorf("Transducer was nil. THEN WHO WAS PHONE?")
   }
 }
