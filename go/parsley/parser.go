@@ -3,6 +3,7 @@ package parsley
 type Analysis struct {
   Lemma string `json:"lemma"`
   Parses []Parse `json:"parses"`
+  Entries []DictionaryEntry `json:"entries,omitempty"`
 }
 
 type Result struct {
