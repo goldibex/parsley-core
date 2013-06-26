@@ -47,12 +47,11 @@ func LoadTransducerSource(source io.Reader, reverseUpperLower bool) (t *Transduc
     bits := strings.Fields(scanner.Text())
     count := len(bits)
     fromState, _ = strconv.Atoi(bits[0])
-    for fromState > len(finalStates) {
-      finalStates = append(finalStates, make([]bool, 1000)...)
-    }
-
     switch count {
       case 1:
+        for fromState > len(finalStates) {
+          finalStates = append(finalStates, make([]bool, 1000)...)
+        }
         finalStates[fromState] = true
       case 4:
         toState, _ = strconv.Atoi(bits[1])
