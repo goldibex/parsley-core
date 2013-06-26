@@ -48,7 +48,7 @@ func TestParse(t *testing.T) {
     t.Errorf("Returned result had query %s, should be %s", result.Query, testQuery)
   }
   if len(result.Analyses) != 1 {
-    t.Errorf("Result had %d analyses, should be 1", len(result.Analyses))
+    t.Fatalf("Result had %d analyses, should be 1", len(result.Analyses))
   }
   analysis := result.Analyses[0]
   if analysis.Lemma != "hello!" {

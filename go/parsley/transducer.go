@@ -5,6 +5,8 @@ import (
   "bufio"
   "bytes"
   "fmt"
+  "strings"
+  "strconv"
 )
 
 type Edge struct {
@@ -42,17 +44,21 @@ func LoadTransducerSource(source io.Reader, reverseUpperLower bool) (t *Transduc
   scanner := bufio.NewScanner(source)
 
   for scanner.Scan() {
-    line := scanner.Text()
-    var count int
-    if reverseUpperLower {
-      count, err = fmt.Sscanln(line, &fromState, &toState, &out, &in)
-    } else {
-      count, err = fmt.Sscanln(line, &fromState, &toState, &in, &out)
-    }
+    bits := strings.Fields(scanner.Text())
+    count := len(bits)
+    fromState, _ = strconv.Atoi(bits[0])
     switch count {
       case 1:
         finalStates[fromState] = true
       case 4:
+        toState, _ = strconv.Atoi(bits[1])
+        if reverseUpperLower {
+          in = bits[3]
+          out = bits[2]
+        } else {
+          in = bits[2]
+          out = bits[3]
+        }
         workingEdges[edgeCount].From = fromState
         workingEdges[edgeCount].To = toState
 
