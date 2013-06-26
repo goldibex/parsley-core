@@ -82,7 +82,6 @@ func LoadTransducerSource(source io.Reader, reverseUpperLower bool) (t *Transduc
         if edgeCount % 1000 == 0 {
           edgeCount = 0
           edges = append(edges, workingEdges...)
-          workingEdges = make([]Edge, 1000)
         }
       default:
         panic("whoops") // TODO: handle this error better
