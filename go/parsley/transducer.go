@@ -27,7 +27,7 @@ func (e Edge) Test(inTape []byte) bool {
 
 type Transducer struct {
   Table [][]Edge
-  FinalStates map[int]bool
+  FinalStates []bool
 }
 
 func LoadTransducerSource(source io.Reader, reverseUpperLower bool) (t *Transducer, err error) {  
@@ -37,7 +37,7 @@ func LoadTransducerSource(source io.Reader, reverseUpperLower bool) (t *Transduc
 
   edges := make([]Edge, 0, 1000)
   workingEdges := make([]Edge, 1000)
-  finalStates := make(map[int]bool, 1000)
+  finalStates := make([]bool, 1000)
   edgeCount := 0
   maxFromState := 0
 
@@ -49,6 +49,9 @@ func LoadTransducerSource(source io.Reader, reverseUpperLower bool) (t *Transduc
     fromState, _ = strconv.Atoi(bits[0])
     switch count {
       case 1:
+        if fromState > len(finalStates) {
+          finalStates = append(finalStates, make([]bool, 1000)...)
+        }
         finalStates[fromState] = true
       case 4:
         toState, _ = strconv.Atoi(bits[1])
