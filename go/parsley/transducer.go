@@ -1,151 +1,146 @@
 package parsley
 
 import (
-  "io"
-  "bufio"
-  "bytes"
   "fmt"
+  "io"
   "strings"
+  "bufio"
   "strconv"
 )
 
-type Edge struct {
-  From int
-  To int
-  In []byte
-  Out []byte
-}
+const (
+  terminalNode = 1 << 0
+  endOfLine = 1 << 1
 
-func (e Edge) Test(inTape []byte) bool {
-  if len(inTape) < len(e.In) {
-    return false
-  } else if e.In == nil {
-    return true
-  }
-  return bytes.Compare(inTape[:len(e.In)], e.In) == 0
+  edgeSize = 1000
+  dataSize = 10000
+) 
+
+type Edge struct {
+  To int32
+  DataOffset int32
+  InLen, OutLen, Flags int16
 }
 
 type Transducer struct {
-  Table [][]Edge
-  FinalStates []bool
+  Edges []Edge
+  NodeOffsets []int32
+  Data []byte
 }
 
-func LoadTransducerSource(source io.Reader, reverseUpperLower bool) (t *Transducer, err error) {  
-  // variables for reading each input line
-  var fromState, toState int
-  var in, out string
+func NewTransducer(r io.Reader, reverse bool) *Transducer {
+  t := new(Transducer)
+  t.Edges = make([]Edge, edgeSize)
+  t.NodeOffsets = make([]int32, edgeSize)
+  t.Data = make([]byte, 0, dataSize)
 
-  edges := make([]Edge, 0, 1000)
-  workingEdges := make([]Edge, 1000)
-  finalStates := make([]bool, 1000)
-  edgeCount := 0
-  maxFromState := 0
+  scanner := bufio.NewScanner(r)
 
-  scanner := bufio.NewScanner(source)
-
+  in, out := "", ""
+  previousNode, node, nodeOffset := 0, 0, 0
   for scanner.Scan() {
-    bits := strings.Fields(scanner.Text())
-    count := len(bits)
-    fromState, _ = strconv.Atoi(bits[0])
-    switch count {
-      case 1:
-        for fromState > len(finalStates) {
-          finalStates = append(finalStates, make([]bool, 1000)...)
-        }
-        finalStates[fromState] = true
-      case 4:
-        toState, _ = strconv.Atoi(bits[1])
-        if reverseUpperLower {
-          in = bits[3]
-          out = bits[2]
-        } else {
-          in = bits[2]
-          out = bits[3]
-        }
-        workingEdges[edgeCount].From = fromState
-        workingEdges[edgeCount].To = toState
+    bits := strings.Fields(string(scanner.Bytes()))
+    if len(bits) == 0 {
+      break
+    }
 
-        if fromState > maxFromState {
-          maxFromState = fromState
-        }
+    previousNode = node
+    node, _ = strconv.Atoi(bits[0]) 
 
-        if in != "<>" {
-          // non-epsilon input
-          workingEdges[edgeCount].In = []byte(in)
-        }
-        if out != "<>" {
-          // non-epsilon output
-          workingEdges[edgeCount].Out = []byte(out)
-        }
-        edgeCount++
-        if edgeCount % 1000 == 0 {
-          edgeCount = 0
-          edges = append(edges, workingEdges...)
-        }
-      default:
-        panic("whoops") // TODO: handle this error better
+    if node != previousNode && node != 0 {
+      t.Edges[nodeOffset - 1].Flags |= endOfLine
+      t.NodeOffsets[node] = int32(nodeOffset)
+    }
+
+    if len(bits) == 1 { // terminal node notice
+      t.Edges[nodeOffset].Flags |= (terminalNode | endOfLine)
+    } else if len(bits) == 4 { // edge
+      destination, _ := strconv.Atoi(bits[1])
+      t.Edges[nodeOffset].To = int32(destination)
+      if reverse {
+        in = bits[3]
+        out = bits[2]
+      } else {
+        in = bits[2]
+        out = bits[3]
+      }
+      if in == "<>" {
+        in = ""
+      }
+      if in == "<>" {
+        out = ""
+      }
+      t.Edges[nodeOffset].DataOffset = int32(len(t.Data))
+      t.Edges[nodeOffset].InLen = int16(len(in))
+      t.Edges[nodeOffset].OutLen = int16(len(out))
+      t.Data = append(t.Data, in...)
+      t.Data = append(t.Data, out...)
+    }
+
+    nodeOffset++
+
+    for nodeOffset >= len(t.Edges) {
+      t.Edges = append(t.Edges, make([]Edge, edgeSize)...)
+    }
+
+    for nodeOffset >= len(t.NodeOffsets) {
+      t.NodeOffsets = append(t.NodeOffsets, make([]int32, edgeSize)...)
     }
   }
-  edges = append(edges, workingEdges[0:edgeCount]...)
-  err = nil
-  edgeTable := make([][]Edge, maxFromState + 1)
-  prevEdgeIndex := 0
+  t.Edges[nodeOffset - 1].Flags |= endOfLine
+  t.Edges = t.Edges[0:nodeOffset]
+  t.NodeOffsets = t.NodeOffsets[0:node + 1]
+  return t
+}
 
-  for i := 1; i < len(edges); i++ {
-    if edges[i].From != edges[prevEdgeIndex].From {
-      edgeTable[edges[prevEdgeIndex].From] = edges[prevEdgeIndex:i]
-      prevEdgeIndex = i
+func (t *Transducer) Print() {
+  counter := 0
+  in := ""
+  out := ""
+  for _, edge := range t.Edges {
+    if edge.Flags & terminalNode != 0 {
+      fmt.Printf("%d\n", counter)
+      counter++
+      continue
     }
+    
+    if edge.InLen > 0 {
+      in = string(t.Data[edge.DataOffset:edge.DataOffset + int32(edge.InLen)])
+    } else {
+      in = "<>"
+    }
+    if edge.OutLen > 0 {
+      out = string(t.Data[edge.DataOffset + int32(edge.InLen):edge.DataOffset + int32(edge.InLen) + int32(edge.OutLen)])
+    } else {
+      out = "<>"
+    }
+    fmt.Printf("%d %d %s %s", counter, edge.To, in, out )
+    if edge.Flags & endOfLine != 0 {
+      // fmt.Printf("+++")
+      counter++
+    }
+    fmt.Printf("\n")
   }
-  edgeTable[edges[prevEdgeIndex].From] = edges[prevEdgeIndex:]
-  t = new(Transducer)
-  t.Table = edgeTable
-  t.FinalStates = finalStates
 
-  return
 }
 
 type TransducerState struct {
-  in []byte
-  Results chan []byte
+  in string
+  Results chan string
   t *Transducer
   signal chan bool
   ran bool  
 }
 
-func (t *Transducer) Prepare(in []byte) (s *TransducerState){
+func (t *Transducer) Prepare(in string) (s *TransducerState){
   s = new(TransducerState)
-  s.Results = make(chan []byte, 8)
+  s.Results = make(chan string, 8)
   s.signal = make(chan bool, 8)
   s.in = in
   s.t = t
   return s
 }
 
-func (t *Transducer) Print() {
-  for i := 0; i < len(t.Table); i++ {
-    if t.FinalStates[i] {
-      fmt.Printf("%d\n", i)
-    }
-    for j := 0; j < len(t.Table[i]); j++ {
-      var in, out string
-      if t.Table[i][j].In == nil {
-        in = "<>"
-      } else {
-        in = string(t.Table[i][j].In)
-      }
-      if t.Table[i][j].Out == nil {
-        out = "<>"
-      } else {
-        out = string(t.Table[i][j].Out)
-      }
-      if t.Table[i][j].From != i {
-        panic(fmt.Sprintf("edge.From %d doesn't correspond with table row %d\n", t.Table[i][j].From, i))
-      }
-      fmt.Printf("%d %d %s %s\n", t.Table[i][j].From, t.Table[i][j].To, in, out)
-    }
-  }
-}
 
 func (s *TransducerState) Run() {
   if s.ran {
@@ -171,32 +166,45 @@ func (s *TransducerState) Run() {
 
   // starting point
   s.signal <- true
-  s.do(s.in, []*Edge{&Edge{}})
+  s.do(s.in, []int32{}, 0)
 }
 
-func (s *TransducerState) do(in []byte, path []*Edge) {
-  edge := path[len(path) - 1]
-  if s.t.FinalStates[edge.To] && len(in) == 0 {
-    // match. send result on channel out
-    outBuf := bytes.Buffer{}
-    for i := 0; i < len(path); i++ {
-      outBuf.Write(path[i].Out)
-    }
-    s.Results <- outBuf.Bytes()
-  }
+func (s *TransducerState) do(in string, path []int32, offset int32) {
+  for {
+    edge := s.t.Edges[offset]
+    edgeIn := string(s.t.Data[edge.DataOffset:edge.DataOffset + int32(edge.InLen)])
 
-  if edge.To < len(s.t.Table) {
-    newEdges := s.t.Table[edge.To]
-    for i := 0; i < len(newEdges); i++ {
-      if newEdges[i].Test(in) {
-        newPath := make([]*Edge, len(path) + 1)
-        copy(newPath, path)
-        newPath[len(path)] = &newEdges[i]
-        advanceLen := len(newEdges[i].In)
-        s.signal <- true
-        go s.do(in[advanceLen:], newPath)
+    if edge.Flags & terminalNode != 0 { // terminal node
+      if in == "" { // match!
+        // construct and transmit the match
+        out := ""
+        for _, pathOffset := range path {
+          pathEdge := s.t.Edges[pathOffset]
+          pathEdgeOut := string(s.t.Data[pathEdge.DataOffset + int32(pathEdge.InLen):pathEdge.DataOffset + int32(pathEdge.InLen) + int32(pathEdge.OutLen)])
+          if pathEdgeOut == "<>" {
+            pathEdgeOut = ""
+          }
+          out += pathEdgeOut
+        }
+        s.Results <- out 
+        break
+      } else {
+        // no way forward here. we're done.
+        break
       }
+    } 
+
+    if len(in) >= len(edgeIn) && in[0:len(edgeIn)] == edgeIn { // matched this edge
+      newPath := make([]int32, len(path) + 1)
+      copy(newPath, path)
+      newPath[len(path)] = offset
+      s.signal <- true
+      go s.do(in[len(edgeIn):], newPath, s.t.NodeOffsets[edge.To])
     }
+    if s.t.Edges[offset].Flags & endOfLine != 0 {
+      break
+    }
+    offset++
   }
   s.signal <- false
 }

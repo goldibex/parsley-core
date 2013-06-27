@@ -25,14 +25,8 @@ var (
 )
 
 func init() {
-  stemmer, err = LoadTransducerSource(strings.NewReader(stemmerSrc), false)
-  if err != nil {
-    panic(fmt.Sprintf("Error %s while creating test stemmer transducer", err))
-  }
-  lemmatizer, err = LoadTransducerSource(strings.NewReader(lemmatizerSrc), false)
-  if err != nil {
-    panic(fmt.Sprintf("Error %s while creating test lemma transducer", err))
-  }
+  stemmer = NewTransducer(strings.NewReader(stemmerSrc), false)
+  lemmatizer = NewTransducer(strings.NewReader(lemmatizerSrc), false)
   grammar, err = NewGrammar(grammarSrc); if err != nil {
     panic(fmt.Sprintf("Error %s while creating grammar", err))
   }

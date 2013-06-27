@@ -30,14 +30,14 @@ func (p *Parser) Parse(q string) (*Result, error) {
   // the first part of each outcome.
   lemmaMap := make(map[string][]Parse, 8)
 
-  s := p.Stemmer.Prepare([]byte(q))
+  s := p.Stemmer.Prepare(q)
   s.Run()
   for result := range s.Results {
     parse, err := p.Grammar.Interpret(string(result)); if err != nil {
       return nil, err
     }
     // lemmatize based on the first stem fragment
-    lemmaState := p.Lemmatizer.Prepare([]byte(parse.Parts[0].Fragment))
+    lemmaState := p.Lemmatizer.Prepare(parse.Parts[0].Fragment)
     lemmaState.Run()
     // always exactly one lemma for each stem fragment, no need to range
     lemma := string(<-lemmaState.Results)
