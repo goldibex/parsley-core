@@ -41,7 +41,7 @@ task :gather_tags do
   puts output.to_yaml
 end
 
-file "out/grammar.json" do
+file "out/grammar.json" => [OBJ_DIR] do
   endings = Array.new
   grammar = YAML.load_file("definition.yaml")  
   grammar_json = File.open("out/grammar.json", "w")
