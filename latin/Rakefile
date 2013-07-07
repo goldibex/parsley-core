@@ -48,6 +48,7 @@ file "out/grammar.json" => [OBJ_DIR] do
   grammar_json.print grammar.to_json
 end
 
+desc "Build the JSON language dscription."
 task :grammar => "out/grammar.json"
 task :latin => [:grammar, "morph:att"]
 task :default => :latin
