@@ -4,6 +4,7 @@ import (
   "errors"
   "strings"
   "fmt"
+  "encoding/json"
 )
 
 const (
@@ -27,23 +28,57 @@ type Parse struct {
   Form string `json:"form"`
 }
 
-type Grammar struct {
-  Dictionary map[string][]string
-  Order []string
-  tokenLookup map[string]string
+type StemGroup struct {
+  Key string `json:"key"`
+  Stems []string `json:"stems"`
+  DerivTypes []string `json:"deriv_types"`
 }
 
-func NewGrammar(dictionary map[string][]string) (*Grammar, error) {
-  tokenLookup := make(map[string]string, len(dictionary) * 4)
-  for key, values := range dictionary {
+type Grammar struct {
+  Dictionary map[string][]string `json:"dictionary"`
+  Order []string `json:"order"`
+  StemGroups map[string]StemGroup `json:"stem_groups"`
+
+  tokenLookup map[string]string `json:"-"`
+  stemGroupLookup map[string]string `json:"-"`
+}
+
+func (g *Grammar) UnmarshalJSON(data []byte) error {
+  type shadow struct {
+    Dictionary map[string][]string `json:"dictionary"`
+    Order []string `json:"order"`
+    StemGroups map[string]StemGroup `json:"stem_groups"`
+  }
+  s := shadow{}
+  err := json.Unmarshal(data, &s); if err != nil {
+    return err
+  }
+  g.Dictionary = s.Dictionary
+  g.Order = s.Order
+  g.StemGroups = s.StemGroups
+
+  tokenLookup := make(map[string]string, len(g.Dictionary) * 4)
+  for key, values := range g.Dictionary {
     for _, value := range values {
       if _, ok := tokenLookup[value]; ok {
-        return nil, GrammarError
+        return GrammarError
       }
       tokenLookup[value] = key
     }
   }
-  return &Grammar{Dictionary: dictionary, tokenLookup: tokenLookup}, nil
+  g.tokenLookup = tokenLookup
+
+  stemGroupLookup := make(map[string]string, len(g.Dictionary) * 4)
+  for stemGroupName, stemGroup := range g.StemGroups {
+    for _, stem := range stemGroup.Stems {
+      stemGroupLookup[stem] = stemGroupName
+    }
+    for _, derivType := range stemGroup.DerivTypes {
+      stemGroupLookup[derivType] = stemGroupName
+    }
+  }
+  g.stemGroupLookup = stemGroupLookup
+  return nil
 }
 
 func (g *Grammar) Interpret(fstOut string) (*Parse, error) {

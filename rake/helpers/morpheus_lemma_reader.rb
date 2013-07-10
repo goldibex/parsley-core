@@ -82,7 +82,7 @@ class MorpheusLemmaReader < Nokogiri::XML::SAX::Document
       @morph_choices.each do |morph_choice|
         out_final = ""
         split_stem = @stem.gsub(/\s+/, "").split(//) + morph_choice + ["<#{@itype}>"]
-        split_lemma = @lemma.gsub(/\s+/, "").split(//)
+        split_lemma = @lemma.gsub(/\s+/, "").split(//) + ["<#{@itype}>"]
 #        puts "#{split_stem} __ #{split_lemma}"
         max = split_stem.length > split_lemma.length ? split_stem.length : split_lemma.length
         max.times do |i|

@@ -19,4 +19,197 @@ dictionary:
   deponency: [dep]
   stemtype: [ 0_a_um, 0_adj3, 0_e, 0_i, 0_is, 0_us, aLs_aris, a_ae, a_es, adverb, an_aLnis, ans_adj, ans_antis, as_adis, as_ae, as_anis, as_antis, as_atis, avperf, ax_adj, c_cis, c_kos, conj, conj1, conj2, conj3, conj3_io, conj4, demonstr, eLr_eLis, eLr_eLris, eLs_eris, e_ae, e_es, e_is, en_inis, ens_adj, ens_entis, eps_ipis, eps_ipitis, er_era_erum, er_eris, er_i, er_ra_rum, er_ri, er_ris, er_ris_re, es_ae, es_eLdis, es_eLi, es_eLtis, es_eLtis_adj, es_ei, es_idis, es_is, es_itis, eus_ei, evperf, ex_icis, ex_icis_adj, ex_igis, exclam, indecl_nom, indef, interrog, ior_ius_comp, ios_i, irreg_adj1, irreg_adj2, irreg_adj3, irreg_decl3, irreg_fut, irreg_nom2, irreg_nom3, irreg_pp1, irreg_pp2, is_e, is_eos, is_eris, is_idis, is_idos, is_is, is_is_C, ius_i, ius_ia_ium, ivperf, ix_adj, ix_iLcis, ix_icis, ix_igis, ma_matis, men_minis, numeral, oLn_oLnis, oLn_onis, o_eLnis, o_enis, o_inis, o_oLnis, o_onis, o_ontis, o_us, on_i, on_ontis, or_oLris, or_oris, or_us_comp, os_i, os_ois, ox_adj, peLs_pedis, peLs_pedis_adj, perfstem, pp4, prep, pron, pron1, pron2, pron3, rel_pron, relative, s_dis, s_dis_adj, s_e, s_is, s_nis, s_ris, s_tis, s_tis_adj, tas_tatis, uLs_uLris, uns_untis, ur_oris, us_a_um, us_eris, us_i, us_ius_adj, us_oris, us_untis, us_us, x_cis, x_ctis, x_gis, y_pos, ys_yos]
   deriv_type: [are_vb, ire_vb]
-order: [person, gender, number, case, tense, mood, voice, degree, compounding, contraction, syncope, nountype, usage, time, accentuation, reduplication, deponency, stemtype, deriv_type]
+order: [person, gender, number, case, tense, mood, voice, degree, usage, time, deponency]
+stem_groups:
+  adjective:
+    stems:
+      - us_a_um
+      - 0_a_um
+      - er_ra_rum
+      - er_era_erum
+      - ius_ia_ium
+      - irreg_adj1
+      - irreg_adj2
+      - irreg_adj3
+      - is_e
+      - er_ris_re
+      - ans_adj
+      - ens_adj
+      - us_ius_adj
+      - 0_ius_adj
+      - ior_ius_comp
+      - or_us_comp
+      - ax_adj
+      - 0_adj3
+      - peLs_pedis_adj
+      - ox_adj
+      - ix_adj
+      - s_tis_adj
+      - eps_ipitis
+      - ex_icis_adj
+      - s_dis_adj
+  adverb:
+    stems:
+      - adverb
+  preposition:
+    stems:
+      - prep
+  pronoun:
+    stems:
+      - pron1
+      - pron2
+      - pron3
+  demonstr:
+    key: "demonstr. pronoun"
+    stems:
+      - demonstr
+  interrog:
+    key: "interrog. pronoun"
+    stems:
+      - interrog
+  indef:
+    key: "indefinite pronoun"
+    stems:
+      - indef
+  relative:
+    key: "relative pronoun"
+    stems:
+      - rel_pron
+      - relative
+  conjunction:
+    stems:
+      - conj
+  indecl:
+    key: "indeclinable"
+    stems:
+      - indecl
+  numeral:
+    stems:
+      - numeral
+  exclamation:
+    stems:
+      - exclam
+  noun1:
+    key: "1st decl. noun"
+    stems:
+      - a_ae
+      - e_es
+      - es_ae
+      - as_ae
+  noun2:
+    key: "2nd decl. noun"
+    stems:
+      - us_i
+      - ius_i
+      - os_i
+      - 0_i
+      - er_ri
+      - ios_i
+      - eus_ei
+      - irreg_nom2
+  noun3:
+    key: "3rd decl. noun"
+    stems:
+      - x_gis
+      - or_oris
+      - is_is
+      - s_is
+      - e_is
+      - ens_entis
+      - ans_antis
+      - tas_tatis
+      - es_is
+      - o_onis
+      - x_cis
+      - is_idis
+      - men_minis
+      - ix_iLcis
+      - ix_icis
+      - o_oLnis
+      - en_inis
+      - ma_matis
+      - as_adis
+      - oLn_oLnis
+      - oLn_onis
+      - or_oLris
+      - ex_icis
+      - uns_untis
+      - er_eris
+      - eLr_eLris
+      - s_tis
+      - 0_is
+      - es_itis
+      - us_untis
+      - or_uris
+      - uLs_uLris
+      - es_eLtis
+      - as_antis
+      - on_ontis
+      - er_eris
+      - s_nis
+      - o_inis
+      - x_ctis
+      - os_ois
+      - ys_yos
+      - is_eris
+      - er_ris
+      - is_is_C
+      - s_dis
+      - peLs_pedis
+      - es_eLdis
+      - is_eos
+      - is_idos
+      - ex_igis
+      - eps_ipis
+      - o_eLnis
+      - an_aLnis
+      - us_eris
+      - us_oris
+      - eLs_eris
+      - ur_oris
+      - es_idis
+      - aLs_aris
+      - as_anis
+      - irreg_nom3
+      - irreg_decl3
+  noun4:
+    key: "4th decl. noun"
+    stems:
+      - us_us
+      - o_us
+  noun5:
+    key: "5th decl. noun"
+    stems:
+      - es_ei
+      - es_eLi
+  verb:
+    stems:
+      - perfstem
+      - irreg_fut
+      - irreg_pp1
+      - irreg_pp2
+      - pp4
+  verb1:
+    key: "1st conj. verb"
+    stems:
+      - conj1
+      - avperf
+    deriv_types:
+      - are_vb
+  verb2:
+    key: "2nd conj. verb"
+    stems:
+      - conj2
+      - evperf
+  verb3:
+    key: "3rd conj. verb"
+    stems:
+      - conj3
+      - conj3_io
+  verb4:
+    key: "4th conj. verb"
+    stems:
+      - conj4
+      - ivperf
+    deriv_types:
+      - ire_vb
