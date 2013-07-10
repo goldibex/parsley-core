@@ -10,7 +10,7 @@ $pres-fut-part$ = ($=case$ | $=number$ | $=gender$ | $=part-tense$ | <act> | <pa
 $gerundive$ = ($=case$ | $=number$ | $=gender$ | <gerundive> | $nonmorph$)* $=part$ ($=case$ | $=number$ | $=gender$ | <gerundive> | $nonmorph$)* $=part$
 $perf-pass-part$ = ($=case$ | $=number$ | $=gender$ | <perf> | <pass> | <part> | $nonmorph$)* $=part$ ($=case$ | $=number$ | $=gender$ | <perf> | <pass> | <part> | $nonmorph$)* $=part$ 
 
-$=supine-case$ = [<acc><dat><abl>]
-$supine$ = ($=supine-case$ | <sg> | <masc> | <supine> | $nonmorph$)* $=part$ ($=supine-case$ | <sg> | <masc> | <supine> | $nonmorph$)* $=part$
+$=supine-case$ = [<nom><dat>]
+$supine$ = ($=supine-case$ | <sg> | <neut> | <supine> | $nonmorph$)* <pp4> ($=supine-case$ | <sg> | <neut> | <supine> | $nonmorph$)* <pp4>
 
 ($pres-fut-part$ | $gerundive$ | $perf-pass-part$ | $supine$)
