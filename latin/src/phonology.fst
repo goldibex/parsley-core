@@ -11,6 +11,8 @@
 #diacritic# = #macron# #breve# #diaeresis# #parse-separator#
 #character# = #letter# #diacritic#
 
+$consonant$ = [#consonant#] | j:i | v:u
+
 $vowel$ = [#vowel#][#diacritic#]*
 
 $vowel-long$ = [#vowel#][#macron#]:[#macron#<>]
@@ -20,4 +22,4 @@ $vowel$ = ($vowel-long$ | $vowel-short$ | $vowel$)
 $vowel-sep$ = $vowel$ $vowel$ [#diaeresis#]:[#diaeresis#<>]
 $vowel$ = ($vowel-sep$ | $vowel$)
 
-$letter$ = ([#consonant#] | [#lemma-extra#] | [#parse-separator#] | $vowel$)
+$letter$ = ($consonant$ | [#lemma-extra#] | [#parse-separator#] | $vowel$)
