@@ -39,17 +39,17 @@ namespace :stems do
     out.close
   end
 
-  file NOUN_STEM_LEX do
+  file NOUN_STEM_LEX => NOUN_STEM_XML do
     parser = Nokogiri::XML::SAX::Parser.new(MorpheusXMLReader.new NOUN_STEM_LEX)
     parser.parse(File.open(NOUN_STEM_XML))
   end
 
-  file VERB_STEM_LEX do
+  file VERB_STEM_LEX => VERB_STEM_XML do
     parser = Nokogiri::XML::SAX::Parser.new(MorpheusXMLReader.new VERB_STEM_LEX)
     parser.parse(File.open(VERB_STEM_XML))
   end
 
-  file LEMMA_LEX do
+  file LEMMA_LEX => [NOUN_STEM_XML, VERB_STEM_XML] do
     parser = Nokogiri::XML::SAX::Parser.new(MorpheusLemmaReader.new LEMMA_LEX)
     parser.parse(File.open(NOUN_STEM_XML))
     parser.parse(File.open(VERB_STEM_XML))
