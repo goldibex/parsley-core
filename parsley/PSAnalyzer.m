@@ -1,13 +1,15 @@
 //
-//  parsley.m
+//  PSAnalyzer.m
 //  parsley
 //
 //  Created by Harry Schmidt on 9/5/13.
 //  Copyright (c) 2013 Harry Schmidt. All rights reserved.
 //
 
-#import "parsley.h"
+#import "PSAnalyzer.h"
 
-@implementation parsley
+@implementation PSAnalyzer {
+    NSString *internalProperty;
+}
 
 @end

@@ -1,13 +1,17 @@
 //
-//  parsley.h
+//  PSAnalyzerTest.m
 //  parsley
 //
 //  Created by Harry Schmidt on 9/5/13.
 //  Copyright (c) 2013 Harry Schmidt. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "PSAnalyzerTest.h"
 
-@interface parsley : NSObject
+@implementation PSAnalyzerTest
+
+-(void) testSanity {
+    
+}
 
 @end

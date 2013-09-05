@@ -8,14 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		512B8D9717D8F62100269B72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512B8D9617D8F62100269B72 /* Foundation.framework */; };
-		512B8D9C17D8F62100269B72 /* parsley.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 512B8D9B17D8F62100269B72 /* parsley.h */; };
-		512B8D9E17D8F62100269B72 /* parsley.m in Sources */ = {isa = PBXBuildFile; fileRef = 512B8D9D17D8F62100269B72 /* parsley.m */; };
 		512B8DA617D8F62100269B72 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512B8DA517D8F62100269B72 /* SenTestingKit.framework */; };
 		512B8DA817D8F62100269B72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512B8DA717D8F62100269B72 /* UIKit.framework */; };
 		512B8DA917D8F62100269B72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512B8D9617D8F62100269B72 /* Foundation.framework */; };
 		512B8DAC17D8F62100269B72 /* libparsley.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 512B8D9317D8F62100269B72 /* libparsley.a */; };
 		512B8DB217D8F62100269B72 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 512B8DB017D8F62100269B72 /* InfoPlist.strings */; };
-		512B8DB517D8F62100269B72 /* parsleyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 512B8DB417D8F62100269B72 /* parsleyTests.m */; };
+		512B8DC017D8F70F00269B72 /* PSAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 512B8DBF17D8F70F00269B72 /* PSAnalyzer.m */; };
+		512B8DC317D8F75A00269B72 /* PSAnalyzerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 512B8DC217D8F75A00269B72 /* PSAnalyzerTest.m */; };
+		51540BBB17D8FA0800868DB1 /* PSAnalysis.m in Sources */ = {isa = PBXBuildFile; fileRef = 51540BBA17D8FA0800868DB1 /* PSAnalysis.m */; };
+		51540BBE17D8FA1F00868DB1 /* PSAnalysisTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 51540BBD17D8FA1F00868DB1 /* PSAnalysisTest.m */; };
+		51540BC017D92F8800868DB1 /* grammar.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51540BBF17D92F8800868DB1 /* grammar.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				512B8D9C17D8F62100269B72 /* parsley.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,15 +46,20 @@
 		512B8D9317D8F62100269B72 /* libparsley.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libparsley.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		512B8D9617D8F62100269B72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		512B8D9A17D8F62100269B72 /* parsley-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "parsley-Prefix.pch"; sourceTree = "<group>"; };
-		512B8D9B17D8F62100269B72 /* parsley.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = parsley.h; sourceTree = "<group>"; };
-		512B8D9D17D8F62100269B72 /* parsley.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = parsley.m; sourceTree = "<group>"; };
 		512B8DA417D8F62100269B72 /* parsleyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = parsleyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		512B8DA517D8F62100269B72 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		512B8DA717D8F62100269B72 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		512B8DAF17D8F62100269B72 /* parsleyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "parsleyTests-Info.plist"; sourceTree = "<group>"; };
 		512B8DB117D8F62100269B72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		512B8DB317D8F62100269B72 /* parsleyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = parsleyTests.h; sourceTree = "<group>"; };
-		512B8DB417D8F62100269B72 /* parsleyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = parsleyTests.m; sourceTree = "<group>"; };
+		512B8DBE17D8F70F00269B72 /* PSAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSAnalyzer.h; sourceTree = "<group>"; };
+		512B8DBF17D8F70F00269B72 /* PSAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSAnalyzer.m; sourceTree = "<group>"; };
+		512B8DC117D8F75A00269B72 /* PSAnalyzerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSAnalyzerTest.h; path = ../parsley/PSAnalyzerTest.h; sourceTree = "<group>"; };
+		512B8DC217D8F75A00269B72 /* PSAnalyzerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSAnalyzerTest.m; path = ../parsley/PSAnalyzerTest.m; sourceTree = "<group>"; };
+		51540BB917D8FA0800868DB1 /* PSAnalysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSAnalysis.h; sourceTree = "<group>"; };
+		51540BBA17D8FA0800868DB1 /* PSAnalysis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSAnalysis.m; sourceTree = "<group>"; };
+		51540BBC17D8FA1F00868DB1 /* PSAnalysisTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSAnalysisTest.h; sourceTree = "<group>"; };
+		51540BBD17D8FA1F00868DB1 /* PSAnalysisTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSAnalysisTest.m; sourceTree = "<group>"; };
+		51540BBF17D92F8800868DB1 /* grammar.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = grammar.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +117,10 @@
 		512B8D9817D8F62100269B72 /* parsley */ = {
 			isa = PBXGroup;
 			children = (
-				512B8D9B17D8F62100269B72 /* parsley.h */,
-				512B8D9D17D8F62100269B72 /* parsley.m */,
+				512B8DBE17D8F70F00269B72 /* PSAnalyzer.h */,
+				512B8DBF17D8F70F00269B72 /* PSAnalyzer.m */,
+				51540BB917D8FA0800868DB1 /* PSAnalysis.h */,
+				51540BBA17D8FA0800868DB1 /* PSAnalysis.m */,
 				512B8D9917D8F62100269B72 /* Supporting Files */,
 			);
 			path = parsley;
@@ -129,8 +137,10 @@
 		512B8DAD17D8F62100269B72 /* parsleyTests */ = {
 			isa = PBXGroup;
 			children = (
-				512B8DB317D8F62100269B72 /* parsleyTests.h */,
-				512B8DB417D8F62100269B72 /* parsleyTests.m */,
+				512B8DC117D8F75A00269B72 /* PSAnalyzerTest.h */,
+				512B8DC217D8F75A00269B72 /* PSAnalyzerTest.m */,
+				51540BBC17D8FA1F00868DB1 /* PSAnalysisTest.h */,
+				51540BBD17D8FA1F00868DB1 /* PSAnalysisTest.m */,
 				512B8DAE17D8F62100269B72 /* Supporting Files */,
 			);
 			path = parsleyTests;
@@ -139,6 +149,7 @@
 		512B8DAE17D8F62100269B72 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				51540BBF17D92F8800868DB1 /* grammar.plist */,
 				512B8DAF17D8F62100269B72 /* parsleyTests-Info.plist */,
 				512B8DB017D8F62100269B72 /* InfoPlist.strings */,
 			);
@@ -217,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				512B8DB217D8F62100269B72 /* InfoPlist.strings in Resources */,
+				51540BC017D92F8800868DB1 /* grammar.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +255,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				512B8D9E17D8F62100269B72 /* parsley.m in Sources */,
+				512B8DC017D8F70F00269B72 /* PSAnalyzer.m in Sources */,
+				51540BBB17D8FA0800868DB1 /* PSAnalysis.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +264,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				512B8DB517D8F62100269B72 /* parsleyTests.m in Sources */,
+				512B8DC317D8F75A00269B72 /* PSAnalyzerTest.m in Sources */,
+				51540BBE17D8FA1F00868DB1 /* PSAnalysisTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +417,7 @@
 				512B8DBA17D8F62100269B72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		512B8DBB17D8F62100269B72 /* Build configuration list for PBXNativeTarget "parsleyTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +426,7 @@
 				512B8DBD17D8F62100269B72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
