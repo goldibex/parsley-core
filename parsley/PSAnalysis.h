@@ -14,6 +14,9 @@
 @property (readonly) NSString* value;
 @property (readonly) NSString* longValue;
 
+- (PSAnalysisProperty*) initWithName:(NSString*)name
+                               value:(NSString*)value;
+
 @end
 
 
@@ -22,6 +25,9 @@
 @property (readonly) NSString* stemPart;
 @property (readonly) NSDictionary* properties;
 
+- (PSAnalysisComponent*) initWithStemPart:(NSString*)stemPart
+                               properties:(NSDictionary*)properties;
+
 @end
 
 
@@ -29,13 +35,16 @@
 
 @property (readonly) NSString* canonicalForm;
 @property (readonly) NSString* lemma;
-@property (readonly) NSString* analyzedForm;
+@property (readonly) NSString* summary;
+@property (readonly) NSString* stemType;
+@property (readonly) NSString* stemGroup;
 
 @property (readonly) NSArray* components;
+@property (readonly) NSDictionary* properties;
 
-- (PSAnalysis *) initWithDefinition:(NSDictionary *)definition transducerData:(NSString *)tData;
-- (NSString *) summary;
-- (NSString *) longSummary;
+- (PSAnalysis *) initWithDefinition:(NSDictionary *)definition
+                              lemma:(NSString *)lemma
+                     transducerData:(NSString *)tData;
 
 @end
 

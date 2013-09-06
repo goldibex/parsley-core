@@ -14,7 +14,7 @@
 - (PSAnalyzer *) initWithATTData: (NSData *)attData;
 - (PSAnalyzer *) initWithATTDataAtURL: (NSURL *)attDataURL;
 
-- (PSAnalysis *) analyze: (NSString *)form;
+- (NSDictionary *) analyze: (NSString *)form;
 
 
 @end

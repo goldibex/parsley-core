@@ -9,18 +9,62 @@
 #import "PSAnalysisTest.h"
 
 @implementation PSAnalysisTest {
+    NSDictionary *definition;
+    NSString *sampleTransducerOutput, *sampleOtherTransducerOutput;
     PSAnalysis* it;
 }
 
 - (void) setUp {
-    NSDictionary* dictionary = 
-    NSString* sampleTransducerOutput = @"laud<are_vb>::<conj1>::at<pres><ind><act><3rd><sg><conj1>";
-    it = [[PSAnalysis alloc] initWithDefinition:[NSDictionary dictionary]
-                                            transducerData:sampleTransducerOutput];
+    NSURL *dictionaryURL = [[NSBundle bundleForClass:[PSAnalysisTest class]] URLForResource:@"grammar"
+                                                                              withExtension:@"plist"];
+    definition = [NSDictionary dictionaryWithContentsOfURL:dictionaryURL];
+    STAssertNotNil(definition, @"Definition dictionary from test bundle plist should exist");
+    sampleTransducerOutput = @"laud<are_vb>::<conj1>::a^t<pres><ind><act><3rd><sg><conj1>";
+    sampleOtherTransducerOutput = @"fi_l<masc><ius_i>::io_rum<gen><pl><ius_i>";
+    
+    it = [[PSAnalysis alloc] initWithDefinition:definition
+                                          lemma:@"laudo"
+                                 transducerData:sampleTransducerOutput];
 }
 
-- (void) tearDown {
+- (void) testSanity {
+    STAssertEquals(it.lemma,
+                   @"laudo",
+                   @"lemma is assigned in initializer");
+}
+
+- (void) testCanonicalForm {
+    STAssertEqualObjects(it.canonicalForm,
+                         @"lauda^t",
+                         @"Canonical form is assembled from parse components");
+}
+
+- (void) testSummary {
+    STAssertEqualObjects(it.summary,
+                         @"3rd sg pres ind act",
+                         @"Short parse comes directly from analysis string");
+}
+
+- (void) testStemType {
+    STAssertEqualObjects(it.stemType,
+                         @"conj1",
+                         @"Stem type comes directly from analysis string");
+}
+
+- (void) testStemGroup {
+    STAssertEqualObjects(it.stemGroup,
+                         @"1st conj. verb",
+                         @"Stem group is retrieved from definition dictionary");
+}
+
+- (void) testComponents {
+    STAssertTrue(it.components.count == 3,
+                 @"There are three components in the sample output");
     
+    for (NSObject* obj in it.components) {
+        STAssertTrue([obj isKindOfClass:[PSAnalysisComponent class]],
+                     @"components are all PSAnalysisComponents");
+    }
 }
 
 @end
