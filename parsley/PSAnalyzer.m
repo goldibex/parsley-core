@@ -8,8 +8,13 @@
 
 #import "PSAnalyzer.h"
 
+#import <stdint.h>
+#import <stdio.h>
+
 @implementation PSAnalyzer {
     NSString *internalProperty;
+    NSArray *edgeLookup;
+    NSArray *edges;
 }
 
 @end

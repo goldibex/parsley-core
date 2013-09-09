@@ -11,8 +11,10 @@
 
 @interface PSAnalyzer : NSObject
 
-- (PSAnalyzer *) initWithATTData: (NSData *)attData;
-- (PSAnalyzer *) initWithATTDataAtURL: (NSURL *)attDataURL;
+- (PSAnalyzer *) initWithATTData:(NSData *)attData
+                      definition:(NSDictionary *)definition;
+- (PSAnalyzer *) initWithATTDataAtURL:(NSURL *)attDataURL
+                        definitionURL:(NSURL *)definitionURL;
 
 - (NSDictionary *) analyze: (NSString *)form;
 
