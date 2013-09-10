@@ -7,14 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PSAnalysis.h" 
+#import "PSAnalysis.h"
+#import "fst.h"
 
 @interface PSAnalyzer : NSObject
 
-- (PSAnalyzer *) initWithATTData:(NSData *)attData
-                      definition:(NSDictionary *)definition;
-- (PSAnalyzer *) initWithATTDataAtURL:(NSURL *)attDataURL
-                        definitionURL:(NSURL *)definitionURL;
+@property (readonly) NSDictionary* definition;
+
+-(PSAnalyzer *)initWithLemmatizerURL:(NSURL *)lemmaURL
+                            morphURL:(NSURL *)morphURL
+                       definitionURL:(NSURL *)definitionURL;
 
 - (NSDictionary *) analyze: (NSString *)form;
 

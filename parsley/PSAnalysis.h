@@ -34,7 +34,6 @@
 @interface PSAnalysis : NSObject
 
 @property (readonly) NSString* canonicalForm;
-@property (readonly) NSString* lemma;
 @property (readonly) NSString* summary;
 @property (readonly) NSString* stemType;
 @property (readonly) NSString* stemGroup;
@@ -43,7 +42,6 @@
 @property (readonly) NSDictionary* properties;
 
 - (PSAnalysis *) initWithDefinition:(NSDictionary *)definition
-                              lemma:(NSString *)lemma
                      transducerData:(NSString *)tData;
 
 @end

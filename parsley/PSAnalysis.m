@@ -90,7 +90,6 @@ static NSCharacterSet* PSPropertySeparators;
 
 
 - (PSAnalysis *) initWithDefinition:(NSDictionary *)definition
-                              lemma:(NSString *)lemma
                      transducerData:(NSString *)tData {
   self = [super init];
   definitionDict = definition;
@@ -146,7 +145,6 @@ static NSCharacterSet* PSPropertySeparators;
   _components = mComponents;
   _properties = mProperties;
   _canonicalForm = mStem;
-  _lemma = lemma;
   return self;
 }
 

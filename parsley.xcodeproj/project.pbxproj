@@ -18,6 +18,10 @@
 		51540BBB17D8FA0800868DB1 /* PSAnalysis.m in Sources */ = {isa = PBXBuildFile; fileRef = 51540BBA17D8FA0800868DB1 /* PSAnalysis.m */; };
 		51540BBE17D8FA1F00868DB1 /* PSAnalysisTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 51540BBD17D8FA1F00868DB1 /* PSAnalysisTest.m */; };
 		51540BC317DE53C300868DB1 /* fst.c in Sources */ = {isa = PBXBuildFile; fileRef = 51540BC217DE53C300868DB1 /* fst.c */; };
+		51540BC917DE717300868DB1 /* lemmas.ate in Resources */ = {isa = PBXBuildFile; fileRef = 51540BC517DE717300868DB1 /* lemmas.ate */; };
+		51540BCA17DE717300868DB1 /* lemmas.ats in Resources */ = {isa = PBXBuildFile; fileRef = 51540BC617DE717300868DB1 /* lemmas.ats */; };
+		51540BCB17DE717300868DB1 /* morphology.ate in Resources */ = {isa = PBXBuildFile; fileRef = 51540BC717DE717300868DB1 /* morphology.ate */; };
+		51540BCC17DE717300868DB1 /* morphology.ats in Resources */ = {isa = PBXBuildFile; fileRef = 51540BC817DE717300868DB1 /* morphology.ats */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,11 +61,15 @@
 		512B8DC217D8F75A00269B72 /* PSAnalyzerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSAnalyzerTest.m; path = ../parsley/PSAnalyzerTest.m; sourceTree = "<group>"; };
 		51540BB917D8FA0800868DB1 /* PSAnalysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSAnalysis.h; sourceTree = "<group>"; };
 		51540BBA17D8FA0800868DB1 /* PSAnalysis.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = PSAnalysis.m; sourceTree = "<group>"; tabWidth = 2; };
-		51540BBC17D8FA1F00868DB1 /* PSAnalysisTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSAnalysisTest.h; sourceTree = "<group>"; };
+		51540BBC17D8FA1F00868DB1 /* PSAnalysisTest.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = PSAnalysisTest.h; sourceTree = "<group>"; tabWidth = 2; };
 		51540BBD17D8FA1F00868DB1 /* PSAnalysisTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSAnalysisTest.m; sourceTree = "<group>"; };
 		51540BBF17D92F8800868DB1 /* grammar.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = grammar.plist; path = parsleyTests/grammar.plist; sourceTree = SOURCE_ROOT; };
-		51540BC217DE53C300868DB1 /* fst.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fst.c; sourceTree = "<group>"; };
-		51540BC417DE53D700868DB1 /* fst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fst.h; sourceTree = "<group>"; };
+		51540BC217DE53C300868DB1 /* fst.c */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.c; path = fst.c; sourceTree = "<group>"; tabWidth = 2; };
+		51540BC417DE53D700868DB1 /* fst.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = fst.h; sourceTree = "<group>"; tabWidth = 2; };
+		51540BC517DE717300868DB1 /* lemmas.ate */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lemmas.ate; sourceTree = "<group>"; };
+		51540BC617DE717300868DB1 /* lemmas.ats */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lemmas.ats; sourceTree = "<group>"; };
+		51540BC717DE717300868DB1 /* morphology.ate */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = morphology.ate; sourceTree = "<group>"; };
+		51540BC817DE717300868DB1 /* morphology.ats */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = morphology.ats; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,11 +161,31 @@
 		512B8DAE17D8F62100269B72 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				51540BCE17DE85E000868DB1 /* morphology */,
+				51540BCD17DE85D200868DB1 /* lemmas */,
 				51540BBF17D92F8800868DB1 /* grammar.plist */,
 				512B8DAF17D8F62100269B72 /* parsleyTests-Info.plist */,
 				512B8DB017D8F62100269B72 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		51540BCD17DE85D200868DB1 /* lemmas */ = {
+			isa = PBXGroup;
+			children = (
+				51540BC517DE717300868DB1 /* lemmas.ate */,
+				51540BC617DE717300868DB1 /* lemmas.ats */,
+			);
+			name = lemmas;
+			sourceTree = "<group>";
+		};
+		51540BCE17DE85E000868DB1 /* morphology */ = {
+			isa = PBXGroup;
+			children = (
+				51540BC717DE717300868DB1 /* morphology.ate */,
+				51540BC817DE717300868DB1 /* morphology.ats */,
+			);
+			name = morphology;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +260,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				512B8DB217D8F62100269B72 /* InfoPlist.strings in Resources */,
+				51540BC917DE717300868DB1 /* lemmas.ate in Resources */,
+				51540BCA17DE717300868DB1 /* lemmas.ats in Resources */,
+				51540BCB17DE717300868DB1 /* morphology.ate in Resources */,
+				51540BCC17DE717300868DB1 /* morphology.ats in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

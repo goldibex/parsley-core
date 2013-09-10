@@ -7,6 +7,7 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "PSAnalyzer.h"
 
 @interface PSAnalyzerTest : SenTestCase
 

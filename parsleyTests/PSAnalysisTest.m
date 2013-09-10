@@ -23,14 +23,7 @@
     sampleOtherTransducerOutput = @"fi_l<masc><ius_i>::io_rum<gen><pl><ius_i>";
     
     it = [[PSAnalysis alloc] initWithDefinition:definition
-                                          lemma:@"laudo"
                                  transducerData:sampleTransducerOutput];
-}
-
-- (void) testSanity {
-    STAssertEquals(it.lemma,
-                   @"laudo",
-                   @"lemma is assigned in initializer");
 }
 
 - (void) testCanonicalForm {
