@@ -7,13 +7,18 @@ import (
 )
 
 var (
-	stemmerSrc    string              = "0 1 helloes hello<sal>::es<pl>\n1"
-	lemmatizerSrc string              = "0 1 hello<sal> hello!\n0 1 es<pl> ese\n1\n"
-	grammarSrc    map[string][]string = map[string][]string{
-		"type":   []string{"sal"},
-		"number": []string{"sg", "pl"},
-	}
-	grammarOrder []string = []string{"number", "type"}
+	stemmerSrc    string              = `0 1 helloes hello<sal>::es<pl>
+  1`
+	lemmatizerSrc string              = `0 1 hello<sal> hello!<sal>
+  0 1 es<pl> ese<pl>
+  1`
+	grammarSrcJSON string = `{
+    "dictionary": {
+      "type": ["sal"],
+      "number": ["sg", "pl"]
+    },
+    "order": ["number", "type"]
+  }`
 	testQuery    string   = "helloes"
 	testLemma    string   = "hello!"
 	testForm     string   = "helloes"
@@ -27,11 +32,11 @@ var (
 func init() {
 	stemmer = NewTransducer(strings.NewReader(stemmerSrc), false)
 	lemmatizer = NewTransducer(strings.NewReader(lemmatizerSrc), false)
-	grammar, err = NewGrammar(grammarSrc)
+	grammar = new(Grammar)
+  err := grammar.UnmarshalJSON([]byte(grammarSrcJSON))
 	if err != nil {
 		panic(fmt.Sprintf("Error %s while creating grammar", err))
 	}
-	grammar.Order = grammarOrder
 }
 
 func TestParse(t *testing.T) {
