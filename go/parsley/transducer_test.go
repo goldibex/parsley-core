@@ -20,7 +20,7 @@ var (
 )
 
 
-func BenchmarkNewTransducer(b *testing.B) {
+func TestNewTransducer(t *testing.T) {
   var r io.Reader
   var f *os.File
   var err error
@@ -36,6 +36,6 @@ func BenchmarkNewTransducer(b *testing.B) {
 
   transducer := NewTransducer(r, false)
   if transducer == nil {
-    b.Errorf("Transducer was nil. THEN WHO WAS PHONE?")
+    t.Errorf("Transducer creation failure, when it should have succeeded.")
   }
 }
