@@ -87,7 +87,9 @@ loadFST(fst_t* fst, NSURL* sourceURL, NSString* name) {
         fst_iterator_out(&morph_iter, output, PS_ANALYZER_MAX_RESULT_LEN);
         // get the lemma from the stem part
         strcpy(stem_part, output);
-        *strstr(stem_part, "::") = '\0';
+        if (strstr(stem_part, "::") != NULL) {
+            *strstr(stem_part, "::") = '\0';
+        }
         fst_iterator_reset(&lemma_iter, stem_part);
         fst_iterate(&lemma_iter);
         fst_iterator_out(&lemma_iter, lemma, PS_ANALYZER_MAX_RESULT_LEN);

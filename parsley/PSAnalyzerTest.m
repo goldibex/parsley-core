@@ -17,7 +17,8 @@
                                 definitionURL:[rsrcURL URLByAppendingPathComponent:@"grammar.plist"]
      ];
     STAssertNotNil(analyzer, @"Analyzer should exist after instantiation");
-    [analyzer analyze:@"malum"];
+    NSDictionary* results = [analyzer analyze:@"malum"];
+    STAssertEquals([results count], 5u, @"There should be 5 parse headings for 'malum'");
 }
 
 @end

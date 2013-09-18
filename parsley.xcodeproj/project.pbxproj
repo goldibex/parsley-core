@@ -22,6 +22,9 @@
 		51540BCA17DE717300868DB1 /* lemmas.ats in Resources */ = {isa = PBXBuildFile; fileRef = 51540BC617DE717300868DB1 /* lemmas.ats */; };
 		51540BCB17DE717300868DB1 /* morphology.ate in Resources */ = {isa = PBXBuildFile; fileRef = 51540BC717DE717300868DB1 /* morphology.ate */; };
 		51540BCC17DE717300868DB1 /* morphology.ats in Resources */ = {isa = PBXBuildFile; fileRef = 51540BC817DE717300868DB1 /* morphology.ats */; };
+		51540C8417DEA3FB00868DB1 /* fst.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 51540BC417DE53D700868DB1 /* fst.h */; };
+		51540C8517DEA3FB00868DB1 /* PSAnalyzer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 512B8DBE17D8F70F00269B72 /* PSAnalyzer.h */; };
+		51540C8617DEA3FB00868DB1 /* PSAnalysis.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 51540BB917D8FA0800868DB1 /* PSAnalysis.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,9 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				51540C8417DEA3FB00868DB1 /* fst.h in CopyFiles */,
+				51540C8517DEA3FB00868DB1 /* PSAnalyzer.h in CopyFiles */,
+				51540C8617DEA3FB00868DB1 /* PSAnalysis.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
