@@ -1,7 +1,7 @@
 package parsley
 
 import (
-  "strings"
+	"strings"
 )
 
 type Analysis struct {
@@ -58,11 +58,12 @@ func (p *Parser) Parse(q string) (*Result, error) {
 		bits := strings.Split(lemma, "<")
 		lemma = bits[0]
 		stemtype := strings.Trim(bits[1], "<>")
-    wordtype := p.Grammar.stemGroupLookup[stemtype]
-    expandedWordType := p.Grammar.StemGroups[wordtype].Key; if expandedWordType == "" {
-      expandedWordType = wordtype
-    }
-    analysis := Analysis{
+		wordtype := p.Grammar.stemGroupLookup[stemtype]
+		expandedWordType := p.Grammar.StemGroups[wordtype].Key
+		if expandedWordType == "" {
+			expandedWordType = wordtype
+		}
+		analysis := Analysis{
 			Lemma:  lemma,
 			Type:   expandedWordType,
 			Parses: parses,
