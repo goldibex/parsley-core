@@ -1,7 +1,8 @@
 package parsley
 
 import (
-	"strings"
+	"fmt"
+  "strings"
 )
 
 type Analysis struct {
@@ -56,6 +57,9 @@ func (p *Parser) Parse(q string) (*Result, error) {
 	analyses := make([]Analysis, 0, 8)
 	for lemma, parses := range lemmaMap {
 		bits := strings.Split(lemma, "<")
+    if len(bits) < 2 {
+      panic(fmt.Sprintf("there were %d bits, should be at least 2", len(bits)))
+    }
 		lemma = bits[0]
 		stemtype := strings.Trim(bits[1], "<>")
 		wordtype := p.Grammar.stemGroupLookup[stemtype]
