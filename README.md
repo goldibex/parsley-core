@@ -39,19 +39,19 @@ prerequisites:
 - A reasonably modern version of Rake (the versions included in some
 releases of Mac OS X are not acceptable)
 
-## Linux
+### Linux
 There's a Debian package for SFST, so all Debian Linuxes (including
 Ubuntu) are in luck:
 ```
 apt-get install sfst
 ```
 
-## Mac OS X
+### Mac OS X
 For now you have to build SFST from [the sources](http://www.cis.uni-muenchen.de/~schmid/tools/SFST/). This in turn will require XCode.
 
 I'm working on a Homebrew recipe for SFST to make your life a bit easier.
 
-## All together now
+### All together now
 
 ```
 git checkout https://github.com/goldibex/parsley-core
@@ -80,7 +80,7 @@ C++ [OpenFST](http://www.openfst.org/twiki/bin/view/FST/WebHome).
 If you happen to know of interpreters in other languages, let me know
 and I'll list them here.
 
-## Go
+### Go
 There's no included binary (you can just use ```fst-mor``` for that), but
 the library does have good test coverage:
 
@@ -89,7 +89,7 @@ go get github.com/goldibex/parsley-core/go/parsley
 go test github.com/goldibex/parsley-core/go/parsley
 ```
 
-## C/Objective-C
+### C/Objective-C
 
 You'll need XCode to run the tests, which are written using SenTestingKit.
 Open the xcodeproj in XCode and compile away!
