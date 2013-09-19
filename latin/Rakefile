@@ -1,10 +1,5 @@
 require 'rake/clean'
 
-require 'yaml'
-require 'json'
-
-require "#{File.dirname(__FILE__)}/../rake/helpers/yaml_to_plist.rake"
-
 SRC_DIR = "src"
 OBJ_DIR = "out"
 
@@ -16,7 +11,6 @@ directory OBJ_DIR
 Dir.glob('../rake/*.rake.rb').each do |r|  
   require "#{File.dirname(__FILE__)}/#{r}"
 end
-
 
 task :gather_tags do
   stemtypes = {}
@@ -44,23 +38,5 @@ task :gather_tags do
   puts output.to_yaml
 end
 
-file "#{OBJ_DIR}/grammar.json" => [OBJ_DIR] do
-  File.open("#{OBJ_DIR}/grammar.json", "w")
-  .print(YAML.load_file("definition.yaml").to_json)
-end
+task :default => ["grammar:plist", "grammar:json", "stems:default", "morph:default"]
 
-file "#{OBJ_DIR}/grammar.plist" => [OBJ_DIR] do
-  File.open("#{OBJ_DIR}/grammar.plist", "w")
-  .print PlistWriter.new(YAML.load_file("definition.yaml")).to_s
-end
-
-namespace :grammar do
-  desc "Build the plist language description."
-  task :plist => "#{OBJ_DIR}/grammar.plist"
-
-  desc "Build the JSON language description."
-  task :json => "#{OBJ_DIR}/grammar.json"
-end
-  
-task :latin => [:grammar, "morph:att"]
-task :default => :latin

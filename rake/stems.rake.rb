@@ -14,6 +14,8 @@ namespace :stems do
   LEMMA_SRC = "#{OBJ_DIR}/lemmas.fst"
   LEMMA_OBJ = "#{OBJ_DIR}/lemmas.a"
   LEMMA_ATT = "#{OBJ_DIR}/lemmas.att"
+  LEMMA_ATS = "#{OBJ_DIR}/lemmas.ats"
+  LEMMA_ATE = "#{OBJ_DIR}/lemmas.ate"
 
   STEMS_SRC = "#{OBJ_DIR}/stems.fst"
   STEMS_OBJ = "#{OBJ_DIR}/stems.a"
@@ -25,14 +27,13 @@ namespace :stems do
   CLOBBER.include(LEMMA_SRC)
   CLOBBER.include(LEMMA_OBJ)
   CLOBBER.include(LEMMA_ATT)
+  CLOBBER.include(LEMMA_ATE)
+  CLOBBER.include(LEMMA_ATS)
 
   CLOBBER.include(STEMS_SRC)
   CLOBBER.include(STEMS_OBJ)
  
-  file STEMS_OBJ => STEMS_SRC do
-    sh "fst-compiler #{STEMS_SRC} #{STEMS_OBJ}"
-  end
-  
+  file STEMS_OBJ => STEMS_SRC  
   file STEMS_SRC => [NOUN_STEM_LEX, VERB_STEM_LEX] do
     out = File.open(STEMS_SRC, "w")
     out.puts "\"#{NOUN_STEM_LEX}\" | \"#{VERB_STEM_LEX}\""
@@ -61,17 +62,12 @@ namespace :stems do
     out.close
   end
 
-  file LEMMA_OBJ => LEMMA_SRC do
-    sh "fst-compiler #{LEMMA_SRC} #{LEMMA_OBJ}"
-  end
+  file LEMMA_OBJ => LEMMA_SRC
+  file LEMMA_ATT => LEMMA_OBJ
+  file LEMMA_ATS => LEMMA_ATT
 
-  file LEMMA_ATT => LEMMA_OBJ do
-    sh "fst-print #{LEMMA_OBJ} > #{LEMMA_ATT}"
-  end
+  desc "Build the AT&T format FSTs required for Parsley."
+  task :lemmas => [STEMS_OBJ, LEMMA_ATT, LEMMA_ATS]
 
-  desc "Build the AT&T format lemma FST required for Parsley."
-  task :lemmas => LEMMA_ATT
-
-  desc "Create the stem vocabulary FST and lemma AT&T FST."
-  task :default => [STEMS_OBJ, LEMMA_ATT]
+  task :default => :lemmas
 end
